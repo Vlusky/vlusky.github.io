@@ -1,0 +1,17 @@
+---
+// components can be used on other components
+import Stub from './Stub.astro'
+---
+<main>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <Stub title="component in component"/>
+</main>
+
+<style>
+    main {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+</style>

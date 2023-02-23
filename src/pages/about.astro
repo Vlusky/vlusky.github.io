@@ -1,0 +1,42 @@
+---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+
+const pageTitle = "to hell with semicolons"
+const attributes = ["BanG Dream", "Project Sekai", "D4DJ"]
+
+const happy = true
+const finished = false
+const goal = 3
+
+const color = 'magenta'
+---
+<html lang="en">
+    <head>
+        <meta charset ="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Astro</title>
+        <style define:vars={{color}}>
+            h1 {
+              color: var(--color);
+              font-size: 4rem;
+            }
+        </style>
+    </head>
+    <body>
+        <Navigation/>
+        
+        <h1>{pageTitle}</h1>
+        <p>goofy ahh astro site lmao</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ratione quaerat officia iusto architecto veritatis nihil qui sapiente impedit? Repudiandae.</p>
+        <ul>
+            {attributes.map((element) => <li>{element}</li>)}
+        </ul>
+
+        {happy && <p>I am happy to be learning Astro!</p>}
+
+        {finished && <p>I finished this tutorial!</p>}
+        
+        {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+    </body>
+</html>

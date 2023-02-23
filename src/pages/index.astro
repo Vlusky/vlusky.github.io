@@ -1,16 +1,8 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro'
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		<p>goofy ahh website</p>
-	</body>
-</html>
+<BaseLayout pageTitle="Home">
+  <h1>goofy ahh astro site</h1>
+  <p>now with layouts!</p>
+  <p>this is more intuitive than hugo</p>
+</BaseLayout>
