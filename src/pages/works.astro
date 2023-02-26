@@ -1,0 +1,261 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+interface image {
+  src: string;
+  alt: string;
+  link?: string;
+}
+// IMPORTANT, migrate to an actual image hosting site, discord is not to be believed
+// ! ok fuck it discord has a width x height parameter just use discord again
+// ! just make sure to set them properly so that page load isn't 25mb
+const galleryGirl: image[] = [
+  {
+    src: "https://media.discordapp.net/attachments/857200469695922216/1076544212167835798/raimon_skirt_rev.png",
+    alt: "Raimon Matataki from Hoshikuzu Telepath",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1078613899521310760/FlzUZgnaAAE8g0o.png",
+    alt: "Kita Ikuto with Kasumi Toyama's costume and guitar",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1078614467249713232/Fi42aQ_aYAAGq9Z.png",
+    alt: "Yua and Rei with the BanG Dream! MocaRan Afterglow costume",
+    link: "https://twitter.com/vlusky_husky/status/1598274944651390976?s=20",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/857200469695922216/1076544212167835798/raimon_skirt_rev.png",
+    alt: "Raimon Matataki from Hoshikuzu Telepath",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1078613899521310760/FlzUZgnaAAE8g0o.png",
+    alt: "Kita Ikuto with Kasumi Toyama's costume and guitar",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1078614467249713232/Fi42aQ_aYAAGq9Z.png",
+    alt: "Yua and Rei with the BanG Dream! MocaRan Afterglow costume",
+    link: "https://twitter.com/vlusky_husky/status/1598274944651390976?s=20",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/857200469695922216/1076544212167835798/raimon_skirt_rev.png",
+    alt: "Raimon Matataki from Hoshikuzu Telepath",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1078613899521310760/FlzUZgnaAAE8g0o.png",
+    alt: "Kita Ikuto with Kasumi Toyama's costume and guitar",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1078614467249713232/Fi42aQ_aYAAGq9Z.png",
+    alt: "Yua and Rei with the BanG Dream! MocaRan Afterglow costume",
+    link: "https://twitter.com/vlusky_husky/status/1598274944651390976?s=20",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/964733786417934416/1077959110374465556/purin_trinity.png",
+    alt: "Miku (Purin) Suride using a uniform from Blue Archive"
+  },
+  {
+    src: "https://media.discordapp.net/attachments/857200469695922216/1017785714932449321/unknown.png",
+    alt: "test"
+  },
+  {
+    src: "https://media.discordapp.net/attachments/857200469695922216/1004712435128746134/tomo_chin.png",
+    alt: "test2"
+  },
+  {
+    src: "https://media.discordapp.net/attachments/857200469695922216/1006085637335695432/IMG_20220808_131901.jpg",
+    alt: "aaa"
+  }
+];
+
+const galleryDesign: image[] = [
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
+    alt: "Pastel Dark",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865020645396/ruins.png",
+    alt: "Ruins",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
+    alt: "Pastel Dark",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865020645396/ruins.png",
+    alt: "Ruins",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
+    alt: "Pastel Dark",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865020645396/ruins.png",
+    alt: "Ruins",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
+    alt: "Pastel Dark",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865020645396/ruins.png",
+    alt: "Ruins",
+  },
+];
+
+---
+
+<BaseLayout pageTitle="works" display="fullscreen" backgroundStyle="#235">
+  <h1>
+    Illustration
+    <span class="material-symbols-rounded toggle">chevron_right</span>
+  </h1> 
+  <div class="gallery shadow hidden">
+    {
+      galleryGirl.map((image) => (
+        <a target="_blank" href={image.link || image.src}>
+          <img class="shadow" src={image.src} alt={image.alt} />
+          </a>
+          ))
+        }
+    <div class="hide">hide<span class="material-symbols-rounded">expand_less</span></div>
+  </div>
+
+  <h1>
+    Graphics
+    <span class="material-symbols-rounded toggle">chevron_right</span>
+  </h1>
+  <div class="gallery shadow hidden">
+    {
+      galleryDesign.map((image) => (
+        <a target="_blank" href={image.link || image.src}>
+          <img class="shadow" src={image.src} alt={image.alt} />
+        </a>
+      ))
+    }
+    <div class="hide">hide<span class="material-symbols-rounded">expand_less</span></div>
+  </div>
+</BaseLayout>
+<script>
+  const toggleButtons = document.querySelectorAll<HTMLElement>(".toggle")
+  const toggleButtonInside = document.querySelectorAll(".hide") 
+  const galleries = document.querySelectorAll<HTMLElement>(".gallery")
+  // querySelectorAll does not return HTMLElement by default
+  if (toggleButtons.length != galleries.length) {
+    console.log("buttons and gallery has different length!")
+    console.log(toggleButtons, galleries)
+  }
+
+  for (let i = 0; i < toggleButtons.length; i++) {
+    const button = toggleButtons[i]
+    const gallery = galleries[i]
+    const buttonInside = toggleButtonInside[i]
+
+    button.addEventListener(("click"), () => {
+      if (button.innerHTML === "expand_more") {
+        button.innerHTML = "chevron_right"
+        gallery.classList.add("hidden")
+
+      } else if (button.innerHTML === "chevron_right") {
+        button.innerHTML = "expand_more"
+        gallery.classList.remove("hidden")
+      }
+    })
+    
+    buttonInside.addEventListener(("click"), () => {
+      button.innerHTML = "chevron_right"
+      gallery.classList.add("hidden")
+    })
+  }
+</script>
+<style>
+  h1 {
+    padding: 1rem;
+  }
+
+  .gallery {
+    background-color: rgb(202, 5, 104);
+    overflow-x: auto;
+    overflow-y:hidden;
+    white-space: nowrap;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0px;
+
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .gallery > a {
+    position: relative;
+    height: 10px;
+    margin: 0px;
+  }
+  
+  .toggle {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+  .gallery > a > img {
+    margin: 0.25rem;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    height: 20rem;
+    transition: all 0.2s;
+  }
+  .gallery > a:first-child > img {
+    margin-left: 0.25rem;
+  }
+  .gallery:has(a:hover) img {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+
+  .gallery:has(a:hover) img:hover {
+    opacity: 1;
+    transform: scale(1.02);
+    cursor: pointer;
+    filter: blur(0);
+  }
+
+  .gallery .hide {
+    display: none;
+  }
+
+
+  @media only screen and (max-width: 620px) {
+    .gallery {
+      white-space: normal;
+      text-align:center;
+      height: 100%;
+    }
+
+    .gallery {
+      overflow: visible;
+    }
+
+    .gallery > a > img {
+      max-width: calc(100% - 0.5rem);
+      height: auto;
+      max-height: 100vh;
+      margin: 0.25rem;
+    }
+
+    .gallery .hide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: sticky;
+      z-index: 1;
+      width:100%;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.479);
+      height: 3rem;
+    }
+  }
+  
+</style>

@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Navigation from '../components/Navigation.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTitle = "to hell with semicolons"
 const attributes = ["BanG Dream", "Project Sekai", "D4DJ"]
@@ -11,32 +12,10 @@ const goal = 3
 
 const color = 'magenta'
 ---
-<html lang="en">
-    <head>
-        <meta charset ="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>Astro</title>
-        <style define:vars={{color}}>
-            h1 {
-              color: var(--color);
-              font-size: 4rem;
-            }
-        </style>
-    </head>
-    <body>
-        <Navigation/>
-        
-        <h1>{pageTitle}</h1>
-        <p>goofy ahh astro site lmao</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ratione quaerat officia iusto architecto veritatis nihil qui sapiente impedit? Repudiandae.</p>
-        <ul>
-            {attributes.map((element) => <li>{element}</li>)}
-        </ul>
-
-        {happy && <p>I am happy to be learning Astro!</p>}
-
-        {finished && <p>I finished this tutorial!</p>}
-        
-        {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
-    </body>
-</html>
+<BaseLayout pageTitle="about" display="flex">
+    <h1>About me</h1>
+    <p>Hello! I'm mostly just a hobbyist that apparently have one too many hobbies. I enjoy learning new things. Whether or not I can keep up with it is another story. But I do love the feeling of acquiring a new knowledge or skill. If nothing more than just a cool new party trick I like to give to people.</p>
+    <p>I have always been obsessed with computers since I was a kid. Messing around with the home computer, going through each and every setting to see what they do. My early days start with the copy of Windows Movie Maker we had. I had such a blast messing around with it, and making things. Followed by making random animations with PowerPoint.</p>
+    <p>Nowadays, I have decided on a few things I wanted to focus. That being art, music, motion design, a bit of programming, and now the "Vlusky the Husky" Youtube channel where I make videos upon various things. Mostly anime. The workflow I have devised for each was a result of years of trial and error. Researching tools, trying what works best for me and what my 10 y.o. laptop could run.</p>
+    <p>If you're wondering, this site is coded by myself with the Astro framework and TypeScript. Please excuse the bugs as I'm not a professional web dev.</p>
+</BaseLayout>

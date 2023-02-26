@@ -1,0 +1,51 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+// props for .md files are stuff inside the fence. which is its YAML
+const { frontmatter } = Astro.props;
+const bg = frontmatter.thumbnail
+---
+
+<BaseLayout display="block" backgroundStyle="rgb(0,0,0)">
+  <div id="bg"></div>
+  <div id="header" class="text-shadow">
+    <h1>{frontmatter.title}</h1>
+    <h2>by {frontmatter.author} on {frontmatter.pubDate.slice(0, 10)}</h2>
+  </div>
+  <div id="content" class="text-shadow">
+    <slot />
+  </div>
+</BaseLayout>
+
+<style define:vars={{bg}}>
+#bg {
+  content: ' ';
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+
+  background: var(--bg) no-repeat center / cover;
+}
+
+:not(#bg) {
+  z-index: 1;
+}
+
+#header {
+  background-color: rgba(255, 255, 255, 0.342);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.24);
+}
+</style>
+
+<script>
+  const images = document.querySelectorAll("img")
+  for (const image of images) {
+    image.classList.add("shadow")
+  }
+</script>

@@ -1,0 +1,31 @@
+---
+const {
+    title,
+    description,
+    thumbnail = "hsl(0, 0%, 41%)",
+    tags,
+    url
+} = Astro.props
+---
+
+<a href={url} class="text-shadow">
+    <div>
+        <h1>{title}</h1>
+        <p>{description}</p>
+    </div>
+</a>
+
+<style define:vars={{thumbnail}}>
+    a {
+        text-decoration: none;
+    }
+
+    div {
+        background: var(--thumbnail);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        padding: 1rem;
+        margin: 1rem;
+    }
+</style>

@@ -1,7 +1,33 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import BlogThumbnail from '../components/BlogThumbnail.astro';
+const allPosts = await Astro.glob('../pages/posts/*.md');
 ---
-<BaseLayout pageTitle={"Blog"}>
-  <h1>Blog posts</h1>
-  <p>random bullshit for the whole family to enjoy</p>
+<BaseLayout pageTitle={"blog"} display="block">
+    <h1>Blog posts</h1>
+    <p>random bullshit for the whole family to enjoy</p>
+    <div>
+      {allPosts.map((post) => <BlogThumbnail 
+          title={post.frontmatter.title}
+          description={post.frontmatter.description}
+          url={post.url}
+          thumbnail={post.frontmatter.thumbnail}
+      ></BlogThumbnail>)}
+      <BlogThumbnail 
+      title="Dealing with burnout"
+      description="you dont"
+      url="/"
+      ></BlogThumbnail>
+      <BlogThumbnail 
+      title="Dealing with burnout"
+      description="you dont"
+      url="/"
+      ></BlogThumbnail>
+      <BlogThumbnail 
+      title="Dealing with burnout"
+      description="you dont"
+      url="/"
+      ></BlogThumbnail>
+    </div>
+
 </BaseLayout>

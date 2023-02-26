@@ -1,8 +1,72 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 ---
-<BaseLayout pageTitle="Home">
-  <h1>goofy ahh astro site</h1>
-  <p>now with layouts!</p>
-  <p>this is more intuitive than hugo</p>
+<BaseLayout pageTitle="home" backgroundStyle="url(https://vlusky.github.io/assets/background-glower-thin.ced40d7e.png)">
+
+  <svg
+    id="logo"
+    viewBox="0 0 1024 245"
+    version="1.1"
+    id="svg8"
+  >
+    <g
+      id="layer1"
+    >
+      <path
+        d="m 24.756258,25.15063 1.2e-5,199.7009 199.70078,-199.7009 H 174.53189 L 74.681479,125.00109 V 25.15063 Z"
+        id="path1015"
+      />
+      <path
+        d="m 232.96787,25.15063 h 49.92522 V 174.9263 l 99.85044,4e-5 v 49.92519 l -149.77566,-3e-5 z"
+        id="path1093"
+      />
+      <path
+        d="M 399.76514,25.150671 V 224.85153 l 99.85056,4e-5 49.92521,-99.85043 V 25.150671 H 499.6157 v 99.850469 l -25.54771,49.92523 -24.37749,-3e-5 V 25.150671 Z"
+        id="path1117"
+      />
+      <path
+        d="m 670.66851,25.150671 -4e-5,49.925241 h -49.9252 l 49.9252,99.850458 v 49.9252 l -99.8504,-4e-5 v -49.92519 h 49.9252 L 570.81807,75.075872 V 25.150671 Z"
+        id="path1119"
+      />
+      <path
+        id="path1121"
+        d="M 691.94568,25.150671 V 224.85142 h 49.9262 v -49.92625 l 49.92416,49.92625 h 49.92621 L 791.79604,174.92517 841.72225,75.074786 V 25.150671 h -49.92621 v 49.924115 l -33.28276,66.567624 -16.6414,-16.64136 V 25.150671 Z"
+      />
+      <path
+        d="M 1008.5196,25.150671 H 958.59442 L 934.21693,75.075872 908.66918,25.150671 h -49.92521 l 49.92521,99.850469 -49.92521,99.85043 h 49.92521 z"
+        id="path1146"
+      />
+    </g>
+  </svg>
+  <span id="subtext">Animator by day, Anituber by night</span>
 </BaseLayout>
+
+<style>
+  @keyframes logo-fade-in {
+    0% {fill-opacity:0% ;stroke-dashoffset: 1000px;}
+    50% {fill-opacity: 0%;}
+    100% {fill-opacity: 100%;stroke-dashoffset: 3000px;}
+  }
+
+  * {
+    align-self: center;
+    padding:0.5rem;
+  }
+
+  #logo {
+    fill: white;
+    width: 30rem;
+    max-width: 80%;
+    
+    stroke-width: 5px;
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    stroke: rgb(255, 255, 255);
+
+    animation: logo-fade-in 2s linear;
+  }
+
+  #subtext {
+    font-size: 1.25rem
+  }
+</style>

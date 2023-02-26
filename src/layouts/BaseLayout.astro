@@ -6,8 +6,8 @@ import Navigation from '../components/Navigation.astro'
 // also maybe multi line the declaration for multiple props maybe cool?
 const {
     pageTitle = 'no title',
-    //anotherProp = 69,
-    //ohBoyAnotherOne
+    display = 'flex',
+    backgroundStyle = "black" //ohBoyAnotherOne
 } = Astro.props
 ---
 <html lang="en">
@@ -16,16 +16,57 @@ const {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>{pageTitle}</title>
-    <style>
-        h1 {
-            text-align: center;
+    <style define:vars={{backgroundStyle}}>
+      #page {
+        background: var(--backgroundStyle);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+        margin-left: 2rem;
+      }
+
+      .flex {
+        display: flex;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .f-center {
+        align-items:center;
+      }
+      
+      .full-screen {
+        padding: 0 !important;
+      }
+      .block {
+        display: flex;
+        padding: 2rem 10rem;
+        flex-direction: column;
+        justify-content: start;
+      }
+
+
+      @media only screen and (max-width: 849px) {
+        .block {
+          padding: 0rem 0rem;
         }
+
+        .flex {
+          padding: 0rem;
+        }
+      }
     </style>
   </head>
   <body>
-    <Navigation />
-    <h1>{pageTitle}</h1>
-    <slot />
+    <Navigation currentPage={pageTitle}/>
+    <div id="page" class={display}>
+      <slot />
+    </div>
   </body>
 </html>
