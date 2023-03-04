@@ -1,64 +1,81 @@
 ---
 const { currentPage } = Astro.props
 ---
+
 <main>
-    <!-- maybe use a map() ? -->
-    <a class={currentPage === 'home' ? 'active' : ''} href="/"><span class="long">Home</span><span class="short">HME</span></a>
-    <a class={currentPage === 'about' ? 'active' : ''} href="/about"><span class="long">About</span><span class="short">ABT</span></a>
-    <a class={currentPage === 'works' ? 'active' : ''}href="/works"><span class="long">Works</span><span class="short">WRK</span></a>
-    <a class={currentPage === 'blog' ? 'active' : ''} href="/blog"><span class="long">Blog</span><span class="short">BLG</span></a>
-    <a class={currentPage === 'contact' ? 'active' : ''} href="/contact"><span class="long">Contact</span><span class="short">CNT</span></a>
+  <!-- maybe use a map() ? -->
+  <a class={currentPage === "home" ? "active" : ""} href="/">
+    <span class="long">Home</span>
+    <span class="short">HME</span>
+  </a>
+  <a class={currentPage === "about" ? "active" : ""} href="/about">
+    <span class="long">About</span>
+    <span class="short">ABT</span>
+  </a>
+  <a class={currentPage === "works" ? "active" : ""} href="/works">
+    <span class="long">Works</span>
+    <span class="short">WRK</span>
+  </a>
+  <a class={currentPage === "blog" ? "active" : ""} href="/blog">
+    <span class="long">Blog</span>
+    <span class="short">BLG</span>
+  </a>
+  <a class={currentPage === "contact" ? "active" : ""} href="/socials">
+    <span class="long">Socials</span>
+    <span class="short">SCL</span>
+  </a>
 </main>
 
 <style>
-    main {
-        height: 100vh; /* Full-height: remove this if you want "auto" height */
-        width: 100vh; /* Set the width of the sidebar */
-        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-        z-index: 1; /* Stay on top */
-        top: 0; /* Stay at the top */
-        
-        transform-origin: 0 0;
-        display: flex;
-        justify-content: space-around;
-        
-        transform: rotate(90deg) translateY(-2rem);
-        text-align: left;
-        padding: 0.25rem;
-        font-size: 1.5rem;
-        font-family: 'Roboto Mono', monospace;
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
-        font-weight:400;
+  main {
+    height: 100vh; /* Full-height: remove this if you want "auto" height */
+    width: 100vh; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
 
-        background-color: rgb(0, 0, 0);
-    }
-    
-    a {
-        color: white;
-        font-weight: 200;
-        text-decoration: none;
+    transform-origin: 0 0;
+    display: flex;
+    justify-content: left;
+
+    transform: rotate(90deg) translateY(-2rem);
+    text-align: left;
+    padding: 0.25rem;
+    font-size: 1.5rem;
+    font-family: "Roboto Mono", monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+
+    background-color: rgb(0, 0, 0);
+  }
+
+  a {
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+    padding-right: 1rem;
+  }
+
+  a > .short {
+    display: none;
+  }
+
+  a:hover:not(.active) {
+    text-decoration: dashed underline;
+  }
+
+  .active {
+    text-decoration: solid underline;
+  }
+
+  @media only screen and (max-height: 500px) {
+    a > .long {
+      display: none;
     }
 
     a > .short {
-        display:none;
+      display: inline;
     }
-
-    a:hover:not(.active) {
-        text-decoration: dashed underline;
-    }
-
-    .active {
-        text-decoration: solid underline;
-    }
-
-    @media only screen and (max-height: 500px) {
-        a > .long {
-            display: none;
-        }
-
-        a > .short {
-            display:inline;
-        }
-    }
+  }
 </style>
