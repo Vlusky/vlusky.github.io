@@ -2,17 +2,9 @@
 import '../styles/global.css';
 import Navigation from '../components/Navigation.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-const pageTitle = "to hell with semicolons"
-const attributes = ["BanG Dream", "Project Sekai", "D4DJ"]
-
-const happy = true
-const finished = false
-const goal = 3
-
-const color = 'magenta'
+import Gallery from "../components/interactive/Gallery.svelte"
 ---
-<BaseLayout pageTitle="about" display="flex">
+<BaseLayout pageTitle="about" display="flex" backgroundStyle="linear-gradient(58deg,rgba(43,99,138,1) 0%,rgba(40,0,62,1) 100%)">
     <h1>About me</h1>
     <p>Hello! I'm mostly just a hobbyist that apparently have one too many hobbies. I enjoy learning new things. Whether or not I can keep up with it is another story. But I do love the feeling of acquiring a new knowledge or skill. If nothing more than just a cool new party trick I like to give to people.</p>
     <p>I have always been obsessed with computers since I was a kid. Messing around with the home computer, going through each and every setting to see what they do. My early days start with the copy of Windows Movie Maker we had. I had such a blast messing around with it, and making things. Followed by making random animations with PowerPoint.</p>

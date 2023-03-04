@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: 'Another one'
 pubDate: 2022-07-01
-thumbnail: url('https://i.bandori.party/u/c/art/a/3156Ako-Udagawa-Power-Not-Until-Our-HP-Hits-0-jVVWzV.png')
+thumbnail: url('https://media.discordapp.net/attachments/969251553762492486/1071068602947600496/cg_anime_thumbnail_rev_0.png?width=734&height=413')
 description: 'Another one just to test the blog list thing because fuck me'
 author: 'Me myself and I'
 image:

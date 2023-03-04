@@ -16,7 +16,7 @@
 
 html, body {
   text-align: left;
-  background: #111;
+  background: #000000;
   color: white;
   box-sizing: border-box;
   margin: 0;
@@ -68,7 +68,7 @@ ol:not(:first-child) {
 
 /* header leading */
 h1, h2, h3, h4, h5, h6 {
-  line-height: 2.5rem;
+  line-height: 2rem;
 }
 
 ul, ol {
@@ -91,7 +91,7 @@ ul, ol {
 } */
 
 blockquote {
-  background-color: #0000005d;
+  background-color: #000000a1;
   margin: 1rem;
 }
 
@@ -100,19 +100,11 @@ a {
   text-decoration: none;
 }
 
+/* wannabe tailwind css utility class */
 .shadow {
-  box-shadow: 2px 2px 6px #00000065;  
+  box-shadow: 2px 2px 8px #000000;  
 }
 
 .text-shadow {
-  text-shadow: 2px 2px 6px #00000065;
-}
-
-/* for markdown posts */
-p:has(img) {
-  text-align:center;
-}
-
-img {
-  max-width: 100%;
+  text-shadow: 2px 2px 4px #000000b2;
 }

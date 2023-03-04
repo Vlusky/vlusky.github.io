@@ -1,0 +1,31 @@
+---
+const {
+    link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+} = Astro.props
+---
+<a href={link}><button><span class="text-shadow material-symbols-rounded">arrow_back</span></button></a>
+
+<style>
+button {
+  position: fixed;
+  left: 3rem;
+  top: 1rem;
+  background-color: #00000000;
+  color:white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  z-index: 30; /* To avoid conflict with the lower layers */
+}
+
+button:hover {
+  transform: scale(1.2)
+}
+
+@media only screen and (max-width: 849px) {
+  button {
+    left: auto;
+    right: 1rem;
+  }
+}
+</style>

@@ -8,6 +8,12 @@ it is very likely that the repo is public...
 or you just somehow stumble upon this blindly.
 or you already knew my github. in which case, hi.)
 
+
+## ~important~
+The actual interactivity bit for everything was done using vanilla (Type)Script.
+While I do love Svelte as much as the next person, I'm kinda used to doing things
+that way.
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:

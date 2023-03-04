@@ -9,6 +9,9 @@ const {
     display = 'flex',
     backgroundStyle = "black" //ohBoyAnotherOne
 } = Astro.props
+
+
+const capitalizeTitle = pageTitle.charAt(0).toUpperCase() + pageTitle.slice(1)
 ---
 <html lang="en">
   <head>
@@ -17,7 +20,8 @@ const {
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <title>{pageTitle}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>{capitalizeTitle || "Vlusk's site"}</title>
     <style define:vars={{backgroundStyle}}>
       #page {
         background: var(--backgroundStyle);
@@ -25,7 +29,6 @@ const {
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        min-height: 100vh;
         margin-left: 2rem;
       }
 
@@ -43,7 +46,9 @@ const {
       
       .full-screen {
         padding: 0 !important;
+        height: auto;
       }
+      
       .block {
         display: flex;
         padding: 2rem 10rem;
@@ -69,4 +74,8 @@ const {
       <slot />
     </div>
   </body>
+  <script>
+    const page = document.querySelector<HTMLElement>("#page")!
+    page.style.minHeight = window.innerHeight + "px"
+  </script>
 </html>

@@ -1,12 +1,17 @@
 ---
-import BaseLayout from "./BaseLayout.astro";
+import BaseLayout from "./BaseLayout.astro"
+import BackButton from "../components/BackButton.astro"
 
 // props for .md files are stuff inside the fence. which is its YAML
-const { frontmatter } = Astro.props;
+const { frontmatter } = Astro.props
 const bg = frontmatter.thumbnail
 ---
 
-<BaseLayout display="block" backgroundStyle="rgb(0,0,0)">
+<BaseLayout
+  display="block"
+  pageTitle={frontmatter.title}
+  backgroundStyle="rgb(0,0,0)"
+>
   <div id="bg"></div>
   <div id="header" class="text-shadow">
     <h1>{frontmatter.title}</h1>
@@ -15,37 +20,85 @@ const bg = frontmatter.thumbnail
   <div id="content" class="text-shadow">
     <slot />
   </div>
+  <BackButton link="/blog" />
 </BaseLayout>
 
-<style define:vars={{bg}}>
-#bg {
-  content: ' ';
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
+<style define:vars={{ bg }} is:global>
+  #bg {
+    content: " ";
+    display: block;
+    position: fixed;
+    opacity: 0.5;
+    filter: blur(5px);
 
-  background: var(--bg) no-repeat center / cover;
-}
+    background: var(--bg) no-repeat center / cover;
 
-:not(#bg) {
-  z-index: 1;
-}
+    transition: width 0.5s ease, height 0.5s ease;
+  }
 
-#header {
-  background-color: rgba(255, 255, 255, 0.342);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.24);
-}
+  :not(#bg) {
+    z-index: 1;
+  }
+
+  #header {
+    background-color: rgba(255, 255, 255, 0.342);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: solid rgba(255, 255, 255, 0.24);
+    border-width: 3px 3px 3px 3px;
+  }
+
+  a {
+    background: linear-gradient(
+      0deg,
+      rgba(177, 191, 235) 0%,
+      rgba(177, 191, 235) 9%,
+      rgba(0, 0, 0, 0) 9%
+    );
+    background-repeat: no-repeat;
+
+    transition: background-size 0.4s ease-out;
+    background-position: right;
+    background-size: 0%;
+    transition-delay: 0.1s;
+  }
+
+  a:hover {
+    background-size: 100%;
+    transition: background-size 0.2s ease-out;
+    background-position: left;
+  }
+
+  p:has(img) {
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 80vh;
+  }
 </style>
 
 <script>
   const images = document.querySelectorAll("img")
   for (const image of images) {
     image.classList.add("shadow")
+
+    image.insertAdjacentHTML("afterend", "<br/>")
+  }
+
+  const margin = 40
+  const background = document.querySelector<HTMLElement>("#bg")!
+
+  const backgroundReset = () => {
+    background.style.height = window.innerHeight + margin + "px"
+    background.style.width = window.innerWidth + margin + "px"
+    background.style.top = `-${margin / 2}px`
+    background.style.left = `-${margin / 2}px`
+  }
+  backgroundReset()
+
+  window.onresize = () => {
+    backgroundReset()
   }
 </script>

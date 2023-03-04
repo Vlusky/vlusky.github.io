@@ -1,122 +1,25 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-
-interface image {
-  src: string;
-  alt: string;
-  link?: string;
-}
-// IMPORTANT, migrate to an actual image hosting site, discord is not to be believed
-// ! ok fuck it discord has a width x height parameter just use discord again
-// ! just make sure to set them properly so that page load isn't 25mb
-const galleryGirl: image[] = [
-  {
-    src: "https://media.discordapp.net/attachments/857200469695922216/1076544212167835798/raimon_skirt_rev.png",
-    alt: "Raimon Matataki from Hoshikuzu Telepath",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1078613899521310760/FlzUZgnaAAE8g0o.png",
-    alt: "Kita Ikuto with Kasumi Toyama's costume and guitar",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1078614467249713232/Fi42aQ_aYAAGq9Z.png",
-    alt: "Yua and Rei with the BanG Dream! MocaRan Afterglow costume",
-    link: "https://twitter.com/vlusky_husky/status/1598274944651390976?s=20",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/857200469695922216/1076544212167835798/raimon_skirt_rev.png",
-    alt: "Raimon Matataki from Hoshikuzu Telepath",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1078613899521310760/FlzUZgnaAAE8g0o.png",
-    alt: "Kita Ikuto with Kasumi Toyama's costume and guitar",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1078614467249713232/Fi42aQ_aYAAGq9Z.png",
-    alt: "Yua and Rei with the BanG Dream! MocaRan Afterglow costume",
-    link: "https://twitter.com/vlusky_husky/status/1598274944651390976?s=20",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/857200469695922216/1076544212167835798/raimon_skirt_rev.png",
-    alt: "Raimon Matataki from Hoshikuzu Telepath",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1078613899521310760/FlzUZgnaAAE8g0o.png",
-    alt: "Kita Ikuto with Kasumi Toyama's costume and guitar",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1078614467249713232/Fi42aQ_aYAAGq9Z.png",
-    alt: "Yua and Rei with the BanG Dream! MocaRan Afterglow costume",
-    link: "https://twitter.com/vlusky_husky/status/1598274944651390976?s=20",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/964733786417934416/1077959110374465556/purin_trinity.png",
-    alt: "Miku (Purin) Suride using a uniform from Blue Archive"
-  },
-  {
-    src: "https://media.discordapp.net/attachments/857200469695922216/1017785714932449321/unknown.png",
-    alt: "test"
-  },
-  {
-    src: "https://media.discordapp.net/attachments/857200469695922216/1004712435128746134/tomo_chin.png",
-    alt: "test2"
-  },
-  {
-    src: "https://media.discordapp.net/attachments/857200469695922216/1006085637335695432/IMG_20220808_131901.jpg",
-    alt: "aaa"
-  }
-];
-
-const galleryDesign: image[] = [
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
-    alt: "Pastel Dark",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865020645396/ruins.png",
-    alt: "Ruins",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
-    alt: "Pastel Dark",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865020645396/ruins.png",
-    alt: "Ruins",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
-    alt: "Pastel Dark",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865020645396/ruins.png",
-    alt: "Ruins",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
-    alt: "Pastel Dark",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865020645396/ruins.png",
-    alt: "Ruins",
-  },
-];
-
+import BaseLayout from "../layouts/BaseLayout.astro"
+import Gallery from "../components/interactive/Gallery.svelte";
+import * as gallery from "./worksList"
 ---
 
-<BaseLayout pageTitle="works" display="fullscreen" backgroundStyle="#235">
-  <h1>
+<BaseLayout pageTitle="works" display="fullscreen" backgroundStyle="#292929">
+  <Gallery kind="image" title="Illustration" elements={gallery.illust} client:idle/>
+  <Gallery kind="youtube" title="Motion" elements={gallery.motion} client:idle/>
+
+  <!-- <h1>
     Illustration
     <span class="material-symbols-rounded toggle">chevron_right</span>
   </h1> 
   <div class="gallery shadow hidden">
     {
-      galleryGirl.map((image) => (
+      gallery.illust.map((image) => (
         <a target="_blank" href={image.link || image.src}>
-          <img class="shadow" src={image.src} alt={image.alt} />
-          </a>
-          ))
-        }
+          <img loading="lazy" class="shadow" src={image.src} alt={image.alt} />
+        </a>
+      ))
+    }
     <div class="hide">hide<span class="material-symbols-rounded">expand_less</span></div>
   </div>
 
@@ -126,25 +29,69 @@ const galleryDesign: image[] = [
   </h1>
   <div class="gallery shadow hidden">
     {
-      galleryDesign.map((image) => (
+      gallery.design.map((image) => (
         <a target="_blank" href={image.link || image.src}>
-          <img class="shadow" src={image.src} alt={image.alt} />
+          <img loading="lazy" class="shadow" src={image.src} alt={image.alt} />
         </a>
       ))
     }
     <div class="hide">hide<span class="material-symbols-rounded">expand_less</span></div>
   </div>
+
+  <h1>
+    Motion
+    <span class="material-symbols-rounded toggle">chevron_right</span>
+  </h1>
+  <div class="gallery shadow hidden">
+    {
+      gallery.motion.map((id) => (
+      <iframe class="youtube shadow" src={`https://www.youtube.com/embed/${id}?controls=0`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      ))
+    }
+    <div class="hide">hide<span class="material-symbols-rounded">expand_less</span></div>
+  </div>
+
+
+  <h1>
+    Videos
+    <span class="material-symbols-rounded toggle">chevron_right</span>
+  </h1>
+  <div class="gallery shadow hidden">
+    {
+      gallery.video.map((id) => (
+      <iframe class="youtube shadow" src={`https://www.youtube.com/embed/${id}?controls=0`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      ))
+    }
+    <div class="hide">hide<span class="material-symbols-rounded">expand_less</span></div>
+  </div>
+
+  <h1>
+    Music
+    <span class="material-symbols-rounded toggle">chevron_right</span>
+  </h1>
+  <div class="gallery shadow hidden">
+    {
+      gallery.songs.map((id) => (
+        <iframe class="soundcloud shadow" scrolling="no" frameborder="no" allow="autoplay" src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${id}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true`}></iframe>
+      ))
+    }
+  </div> -->
+
 </BaseLayout>
 <script>
+  // querySelectorAll does not return HTMLElement by default
   const toggleButtons = document.querySelectorAll<HTMLElement>(".toggle")
   const toggleButtonInside = document.querySelectorAll(".hide") 
   const galleries = document.querySelectorAll<HTMLElement>(".gallery")
-  // querySelectorAll does not return HTMLElement by default
+  
+  // check to see if the code had done a fucky wucky
   if (toggleButtons.length != galleries.length) {
     console.log("buttons and gallery has different length!")
     console.log(toggleButtons, galleries)
   }
-
+  // because the button is on top of the gallery, the index should line up
+  // fool proof? heck no. but it's good enough and is better to wrap around my head
+  // than managing a relationship of element ID's
   for (let i = 0; i < toggleButtons.length; i++) {
     const button = toggleButtons[i]
     const gallery = galleries[i]
@@ -162,6 +109,7 @@ const galleryDesign: image[] = [
     })
     
     buttonInside.addEventListener(("click"), () => {
+      // chevron_right = hidden, same deal as above
       button.innerHTML = "chevron_right"
       gallery.classList.add("hidden")
     })
@@ -180,7 +128,6 @@ const galleryDesign: image[] = [
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     padding-bottom: 0px;
-
   }
 
   .hidden {
@@ -210,6 +157,7 @@ const galleryDesign: image[] = [
   .gallery > a:first-child > img {
     margin-left: 0.25rem;
   }
+  
   .gallery:has(a:hover) img {
     opacity: 0.5;
     filter: blur(5px);
@@ -226,6 +174,22 @@ const galleryDesign: image[] = [
     display: none;
   }
 
+  .gallery > iframe {
+    height: 20rem;
+    max-width: calc(100% - 0.5rem);
+
+    margin-top: 0.25rem;
+    margin-left: 0.4rem;
+  }
+
+  .youtube {
+    aspect-ratio: 16/9 !important;
+  }
+
+  .soundcloud {
+    aspect-ratio: 1
+  }
+
 
   @media only screen and (max-width: 620px) {
     .gallery {
@@ -240,9 +204,34 @@ const galleryDesign: image[] = [
 
     .gallery > a > img {
       max-width: calc(100% - 0.5rem);
-      height: auto;
       max-height: 100vh;
+      height: auto;
       margin: 0.25rem;
+    }
+
+    .gallery > iframe {
+      height: auto;
+      width: calc(100% - 0.5rem);
+      margin: 0 !important;
+      padding:0 ;
+    }
+
+    
+    /* disable the epic gamer hover effect when on mobile */
+    .gallery:has(a:hover) img {
+      opacity: 1;
+      filter: blur(0);
+    }
+
+    .gallery:has(a:hover) img:hover {
+      opacity: 1;
+      transform: scale(1.02);
+      cursor: pointer;
+      filter: blur(0);
+    }
+
+    .gallery > iframe:first-child {
+      padding-top: 0.25rem;
     }
 
     .gallery .hide {
