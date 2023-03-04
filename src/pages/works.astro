@@ -5,10 +5,41 @@ import * as gallery from "./worksList"
 ---
 
 <BaseLayout pageTitle="works" display="full-screen" backgroundStyle="#292929">
-  <Gallery kind="image" title="Illustration" elements={gallery.illust} client:idle/>
-  <Gallery kind="image" title="Design" elements={gallery.design} client:idle/>
-  <Gallery kind="youtube" title="Motion" elements={gallery.motion} client:idle/>
-  <Gallery kind="soundcloud" title="Music" elements={gallery.songs} client:idle/>
+  <Gallery
+    kind="image"
+    title="Illustration"
+    elements={gallery.illust}
+    bg="linear-gradient(90deg, rgba(218,106,163,1) 0%, rgba(202,5,104,1) 100%)"
+    client:idle
+  />
+  <Gallery
+    kind="image"
+    title="Design"
+    elements={gallery.design}
+    bg="linear-gradient(90deg, rgba(185,0,0,1) 0%, rgba(161,56,0,1) 100%)"
+    client:idle
+  />
+  <Gallery
+    kind="youtube"
+    title="Motion"
+    elements={gallery.motion}
+    bg="linear-gradient(90deg, rgba(0,82,161,1) 0%, rgba(0,159,185,1) 100%)"
+    client:idle
+  />
+  <Gallery
+    kind="youtube"
+    title="Video"
+    elements={gallery.video}
+    bg="linear-gradient(90deg, rgba(154,0,161,1) 0%, rgba(179,0,156,1) 100%)"
+    client:idle
+  />
+  <Gallery
+    kind="soundcloud"
+    title="Music"
+    elements={gallery.songs}
+    bg="linear-gradient(90deg, rgba(2,153,40,1) 0%, rgba(0,179,135,1) 100%)"
+    client:idle
+  />
   
   <!-- cheeky empty unicode div to add dynamic bottom padding  -->
   <div id="shh">⠀</div>

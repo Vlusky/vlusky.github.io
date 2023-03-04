@@ -4,8 +4,8 @@
   type Kind = "image" | "youtube" | "soundcloud"
 
   export let title = "title"
-  export let elements: any
   export let bg = "rgb(202, 5, 104)"
+  export let elements: any
   export let kind: Kind
 
   let isOpen = false 
@@ -19,7 +19,7 @@
   </button> 
 </h1>
 {#if isOpen}
-  <main transition:slide style="background-color:{bg}">
+  <main transition:slide style="background:{bg}">
     {#each elements as element}
       {#if kind === "image"}
       <a href="{element.link || element.src}">
@@ -177,6 +177,10 @@
       bottom: 0;
       background-color: rgba(0, 0, 0, 0.479);
       height: 3rem;
+    }
+
+    .soundcloud {
+      aspect-ratio: 2;
     }
   }
 </style>
