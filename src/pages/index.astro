@@ -2,7 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 <BaseLayout pageTitle="home" backgroundStyle="url(https://cdn.discordapp.com/attachments/1027882514548789279/1079729679981891624/background-glower-thin.png)">
-
+  <img id="bg"/>
+  <div id="curtain"></div>
   <svg
     id="logo"
     viewBox="0 0 1024 245"
@@ -41,7 +42,21 @@ import BaseLayout from '../layouts/BaseLayout.astro'
   <span id="subtext" class="text-shadow">Animator by day, Anituber by night</span>
 </BaseLayout>
 
+<script>
+  const image = document.querySelector<HTMLImageElement>("#bg")!
+  const curtain = document.querySelector<HTMLDivElement>("#curtain")!
+  image.onload = () => {
+    curtain.style.opacity = "0"
+  }
+  image.src = "https://cdn.discordapp.com/attachments/1027882514548789279/1079729679981891624/background-glower-thin.png"
+</script>
+
 <style>
+  @keyframes hueshift {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+  }
+
   @keyframes logo-fade-in {
     0% {fill-opacity:0% ;stroke-dashoffset: 1000px;}
     50% {fill-opacity: 0%;}
@@ -51,6 +66,19 @@ import BaseLayout from '../layouts/BaseLayout.astro'
   * {
     align-self: center;
     padding:0.5rem;
+  }
+
+  #bg {
+    display:none
+  }
+
+  #curtain {
+    /* compensate for padding */
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+    position:absolute;
+    background: black;
+    transition: opacity 2s;
   }
 
   #logo {
@@ -64,10 +92,14 @@ import BaseLayout from '../layouts/BaseLayout.astro'
     stroke: rgb(255, 255, 255);
 
     animation: logo-fade-in 2s linear;
+
+    z-index: 2;
   }
 
   #subtext {
     font-size: min(1.25rem, 4vw);
     text-align: center;
+    z-index: 2;
+    user-select: none;
   }
 </style>
