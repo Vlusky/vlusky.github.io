@@ -1,6 +1,8 @@
 
 <script lang="ts">
   import { slide, fade } from "svelte/transition"
+  import Youtube from "./Youtube.svelte";
+
   type Kind = "image" | "youtube" | "soundcloud"
 
   export let title = "title"
@@ -22,7 +24,7 @@
   <main transition:slide style="background:{bg}">
     {#each elements as element}
       {#if kind === "image"}
-      <a href="{element.link || element.src}">
+      <a target="_blank" rel="noreferrer" href="{element.link || element.src}">
         <img
           transition:fade
           class="shadow"
@@ -31,13 +33,19 @@
         >
       </a>
       {:else if kind === "youtube"}
-      <iframe
+      <!-- ! iframes suck, make your own thumbnail component -->
+      <!-- <iframe
       transition:fade
         class="youtube shadow"
         src="https://www.youtube.com/embed/{element}?controls=0"
         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
-      ></iframe>
+      ></iframe> -->
+
+      <div class="youtube shadow">
+        <Youtube id="{element.id}" title="{element.title}"/>
+      </div>
+
       {:else if kind === "soundcloud"}
       <iframe
         transition:fade
@@ -115,7 +123,15 @@
   }
 
   .youtube {
-    aspect-ratio: 16/9 !important;
+    height: 20rem;
+    aspect-ratio: 16/9;
+    display:inline-block;
+    margin: 0.25rem;
+    margin-bottom: 0;
+  }
+
+  .youtube:not(:first-child) {
+    margin-left: 0;
   }
   
   .soundcloud {
@@ -148,6 +164,12 @@
       width: calc(100% - 0.5rem);
       margin: 0 !important;
       padding:0 ;
+    }
+
+    .youtube {
+      height: auto;
+      width: calc(100% - 0.5rem);
+      margin: 0.25rem !important;
     }
 
     main > iframe:first-child {
