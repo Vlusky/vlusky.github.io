@@ -29,7 +29,7 @@ Even with multiple school-related hurdles.
 
 > ## The Canipa Effect
 > This video has the most intense research I've ever done for a review.
-Canipa did a few videos on Orange alredy, so I just kinda... copied his homework.
+Canipa did a few [videos on Orange](https://www.youtube.com/watch?v=Q44wp2_UlE4) already, so I just kinda... copied his homework.
 I mean why take the time to look for them myself if the story I want to cover is already right there.
 To be fair, Orange is already pretty well researched.
 But for some aspects, like the Land of the Lustrous behind the scene images,
