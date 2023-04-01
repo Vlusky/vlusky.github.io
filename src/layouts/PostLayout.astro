@@ -11,6 +11,7 @@ const bg = frontmatter.thumbnail
   display="block"
   pageTitle={frontmatter.title}
   backgroundStyle="rgb(0,0,0)"
+  description={frontmatter.description}
 >
   <div id="bg"></div>
   <div id="header" class="text-shadow">
@@ -91,14 +92,14 @@ const bg = frontmatter.thumbnail
   const background = document.querySelector<HTMLElement>("#bg")!
 
   const backgroundReset = () => {
-    background.style.height = window.innerHeight + margin + "px"
-    background.style.width = window.innerWidth + margin + "px"
+    background.style.height = innerHeight + margin + "px"
+    background.style.width = innerWidth + margin + "px"
     background.style.top = `-${margin / 2}px`
     background.style.left = `-${margin / 2}px`
   }
   backgroundReset()
 
-  window.onresize = () => {
+  window.addEventListener("resize", () => {
     backgroundReset()
-  }
+  })
 </script>

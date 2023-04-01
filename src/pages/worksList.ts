@@ -11,8 +11,13 @@ interface youtube {
   title: string;
 }
 
-// ! change the src to the scaled down discord version
+// ![todo) change the src to the scaled down discord version
 export const illust: image[] = [
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882866434134066/with-oasis.png?width=310&height=413",
+    alt: "Cover art for CrunchyBagels's novel With Oasis",
+    link: "https://www.honeyfeed.fm/novels/8699"
+  },
   {
     src:"https://media.discordapp.net/attachments/1027882514548789279/1081772078400815174/Fpk87u0aYAAZbmX.png?width=377&height=413",
     alt:"Miku (Purin) Suride wearing a uniform from Blue Archive",
@@ -62,37 +67,25 @@ export const illust: image[] = [
 
 export const design: image[] = [
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
-    alt: "Pastel Dark",
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882862738944061/iyashikei.png?width=734&height=413",
+    alt: "Infographic about Iyashikei with Rin Shima",
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865020645396/ruins.png",
-    alt: "Ruins",
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863208706059/lock-banner.png?width=734&height=413",
+    alt: "Banner design with LOCK or Rokka Asahi",
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
-    alt: "Pastel Dark",
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865846915102/tomoe-poly.png?width=734&height=413",
+    alt: "Banner design with Tomoe Udagawa",
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865020645396/ruins.png",
-    alt: "Ruins",
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863561035806/mindspace.png?width=413&height=413",
+    alt: "Mindspace album art",
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
-    alt: "Pastel Dark",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865020645396/ruins.png",
-    alt: "Ruins",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
-    alt: "Pastel Dark",
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865020645396/ruins.png",
-    alt: "Ruins",
-  },
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882862218858526/crystals.png?width=734&height=413",
+    alt: "Crystals",
+  }
 ]
 
 // youtubeID
@@ -107,7 +100,10 @@ export const motion: youtube[] = [
   {id:"v5QcY46pDkU",title:"False Noise - Collapse Theme"}, // False Noise - Collapse Theme Motion Graphics test
 ]
 
+
+// https://www.youtube.com/watch?v=Z1UXpUNsf08&t=1604s
 export const video: youtube[] = [
+  {id:"Z1UXpUNsf08",title:"CG Anime Battle Royale"},
   {id:"kOr9n-Y-WW0",title:"Bocchi vs Her Contemporaries"},
   {id:"UQXPOKUt7zQ",title:"Digging the Dig Delight Direct Drive"},
   {id:"F2pAsfzGbk8",title:"Establish Life, Establish Dominance"},
@@ -120,11 +116,12 @@ export const video: youtube[] = [
 // soundcloud API song/playlist ID
 // api.soundcloud.com/[tracks|playlists]/##########
 // (it's hidden somewhere inside the "share embed")
-/*
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1246708291&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/vlusky-husky" title="Vlusky" target="_blank" style="color: #cccccc; text-decoration: none;">Vlusky</a> · <a href="https://soundcloud.com/vlusky-husky/loquacious" title="Loquacious" target="_blank" style="color: #cccccc; text-decoration: none;">Loquacious</a></div>
-*/
+
 export const songs = [
   "1398023656", // radiopassive
   "1246708291", // loquacious
   "1148013934", // isshokenmei
+  "1188342196", // sunset forest
+  "1167044617", // lonely night
+  "972780034",  // in and out of stasis
 ];
