@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: 'New site!'
-pubDate: 2022-07-01
+pubDate: 2023-04-01
 thumbnail: url('https://cdn.discordapp.com/attachments/1027882514548789279/1091565946319151134/image.png')
 description: 'This is the first post of my new Astro blog.'
 author: 'Vlusky'
