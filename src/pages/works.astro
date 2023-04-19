@@ -42,9 +42,19 @@ import * as gallery from "./worksList"
   />
   <!-- cheeky empty unicode div to add dynamic bottom padding  -->
   <div id="shh">⠀</div>
+  <!-- preload the icons by loading them into an invisible div -->
+  <div class="hide">
+    <span id="icon" class="material-symbols-outlined text-shadow">
+     play_circle
+    </span>
+  </div>
 </BaseLayout>
 <style>
   #shh {
     user-select: none;
+  }
+
+  .hide {
+    visibility: hidden;
   }
 </style>

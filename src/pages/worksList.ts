@@ -14,6 +14,11 @@ interface youtube {
 // ![todo) change the src to the scaled down discord version
 export const illust: image[] = [
   {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1098135874107097118/manga_time_kirara_shy_space_girls.png?width=734&height=413",
+    alt: "Ao Manaka and Umika Konohoshi as the Shy Space Girls of Manga Time Kirara",
+    link: "https://twitter.com/vlusky_husky/status/1648502445851701248"
+  },
+  {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1027882866434134066/with-oasis.png?width=310&height=413",
     alt: "Cover art for CrunchyBagels's novel With Oasis",
     link: "https://www.honeyfeed.fm/novels/8699"
@@ -69,28 +74,46 @@ export const design: image[] = [
   {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1027882862738944061/iyashikei.png?width=734&height=413",
     alt: "Infographic about Iyashikei with Rin Shima",
+    link: "https://twitter.com/vlusky_husky/status/1398990650368880646"
   },
   {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863208706059/lock-banner.png?width=734&height=413",
     alt: "Banner design with LOCK or Rokka Asahi",
+    link: "https://twitter.com/vlusky_husky/status/1423091377139720196"
   },
   {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865846915102/tomoe-poly.png?width=734&height=413",
     alt: "Banner design with Tomoe Udagawa",
+    link: "https://twitter.com/vlusky_husky/status/1571109157482434563"
   },
   {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863561035806/mindspace.png?width=413&height=413",
     alt: "Mindspace album art",
+    link: "https://twitter.com/vlusky_husky/status/1488532010247520257"
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863984652289/pastel-dark.png?width=853&height=480",
+    alt: "Pastel dark",
+    link: "https://twitter.com/vlusky_husky/status/1488532010247520257"
   },
   {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1027882862218858526/crystals.png?width=734&height=413",
     alt: "Crystals",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865020645396/ruins.png?width=853&height=480",
+    alt: "Ruins"
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1098136956682108968/EwIQdzxVcAIIvDX.png?width=413&height=413",
+    alt: "A grid of cubes that looks like a futuristic end crystal",
+    link: "https://twitter.com/vlusky_husky/status/1369675439875125254"
   }
 ]
 
 // youtubeID
-// https://www.youtube.com/watch?v=_##########
-
+// https://www.youtube.com/watch?v=_#######
+// maybe setup an api to grab the title? ... nah probably not.
 export const motion: youtube[] = [
   {id:"_llL0D8Jbr4",title:"Lyrical Lily - Maihime but Bocchi the Rock!"},
   {id:"kmiwqzMF6F8",title:"Roselia - Sanctuary"},
@@ -98,6 +121,8 @@ export const motion: youtube[] = [
   {id:"L_iHuC7Wvo8",title:"Photon Maiden - 4 Challenges"},
   {id:"HXeW1cCc_mE",title:"Afterglow - SENSENFUKOKU"},
   {id:"v5QcY46pDkU",title:"False Noise - Collapse Theme"}, // False Noise - Collapse Theme Motion Graphics test
+  {id:"Lfl2LHf-4Jw",title:"Aoba, Kou - Sayonara Hikoukigumo"},
+  {id:"iEPy-1KcIZo",title:"Gawr Gura - Reflect"}
 ]
 
 
