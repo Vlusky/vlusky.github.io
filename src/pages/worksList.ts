@@ -12,7 +12,18 @@ interface youtube {
 }
 
 // ![todo) change the src to the scaled down discord version
+// [info] discords default thumbnail size has height = 413
 export const illust: image[] = [
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1101515699505082459/hifumi_hifumi_takimoto_half.png?width=292&height=413",
+    alt: "Hifumi Takimoto from NEW GAME! wearing the costume of Hifumi Ajitani from Blue Archive",
+    link: "https://twitter.com/vlusky_husky/status/1651593598553694208"
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1101515699190501406/hifumi_hifumi_ajitani_rev_half.png?width=292&height=413",
+    alt: "Hifumi Ajitani from Blue Archive wearing the costume of Hifumi Takimoto from NEW GAME!",
+    link: "https://twitter.com/vlusky_husky/status/1651593598553694208"
+  },
   {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1098135874107097118/manga_time_kirara_shy_space_girls.png?width=734&height=413",
     alt: "Ao Manaka and Umika Konohoshi as the Shy Space Girls of Manga Time Kirara",
