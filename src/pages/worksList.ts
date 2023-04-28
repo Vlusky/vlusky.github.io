@@ -12,7 +12,7 @@ interface youtube {
 }
 
 // ![todo) change the src to the scaled down discord version
-// [info] discords default thumbnail size has height = 413
+//  [info] discords default thumbnail size has height of 413
 export const illust: image[] = [
   {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1101515699505082459/hifumi_hifumi_takimoto_half.png?width=292&height=413",
@@ -28,11 +28,6 @@ export const illust: image[] = [
     src: "https://media.discordapp.net/attachments/1027882514548789279/1098135874107097118/manga_time_kirara_shy_space_girls.png?width=734&height=413",
     alt: "Ao Manaka and Umika Konohoshi as the Shy Space Girls of Manga Time Kirara",
     link: "https://twitter.com/vlusky_husky/status/1648502445851701248"
-  },
-  {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882866434134066/with-oasis.png?width=310&height=413",
-    alt: "Cover art for CrunchyBagels's novel With Oasis",
-    link: "https://www.honeyfeed.fm/novels/8699"
   },
   {
     src:"https://media.discordapp.net/attachments/1027882514548789279/1081772078400815174/Fpk87u0aYAAZbmX.png?width=377&height=413",
@@ -78,7 +73,12 @@ export const illust: image[] = [
     src:"https://media.discordapp.net/attachments/1027882514548789279/1078614467249713232/Fi42aQ_aYAAGq9Z.png?width=413&height=413",
     alt:"Rei and Yua from the DIY Anime wearing the costumes of Ran and Moca from Bandori",
     link:"https://twitter.com/vlusky_husky/status/1598274944651390976"
-  }
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882866434134066/with-oasis.png?width=310&height=413",
+    alt: "Cover art for CrunchyBagels's novel With Oasis",
+    link: "https://www.honeyfeed.fm/novels/8699"
+  },
 ]
 
 export const design: image[] = [
