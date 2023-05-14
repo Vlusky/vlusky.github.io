@@ -15,6 +15,11 @@ interface youtube {
 //  [info] discords default thumbnail size has height of 413
 export const illust: image[] = [
   {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1107221763831631902/akeuchi_alien_alien.png?width=734&height=413",
+    alt: "Yuu Akeuchi from Hoshikuzu Telepath doing the pose from Alien Alien",
+    link: "https://twitter.com/vlusky_husky/status/1657420559117062144"
+  },
+  {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1101515699505082459/hifumi_hifumi_takimoto_half.png?width=292&height=413",
     alt: "Hifumi Takimoto from NEW GAME! wearing the costume of Hifumi Ajitani from Blue Archive",
     link: "https://twitter.com/vlusky_husky/status/1651593598553694208"
