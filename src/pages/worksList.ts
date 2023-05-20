@@ -15,6 +15,11 @@ interface youtube {
 //  [info] discords default thumbnail size has height of 413
 export const illust: image[] = [
   {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1109355966463488100/hoshikuzu_the_rock.png?width=292&height=413",
+    alt: "Bocchi and Kita in the style of the key visual for Hoshikuzu Telepath",
+    link: "https://twitter.com/vlusky_husky/status/1659586589297897473"
+  },  
+  {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1107221763831631902/akeuchi_alien_alien.png?width=734&height=413",
     alt: "Yuu Akeuchi from Hoshikuzu Telepath doing the pose from Alien Alien",
     link: "https://twitter.com/vlusky_husky/status/1657420559117062144"
