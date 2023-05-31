@@ -15,6 +15,11 @@ interface youtube {
 //  [info] discords default thumbnail size has height of 413
 export const illust: image[] = [
   {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1113474519554854912/photon_umbrella.png?width=734&height=413",
+    alt: "Photon Maiden doing the pose from the Lost Umbrella album art",
+    link: "https://twitter.com/vlusky_husky/status/1663892238525685761"
+  },
+  {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1109355966463488100/hoshikuzu_the_rock.png?width=292&height=413",
     alt: "Bocchi and Kita in the style of the key visual for Hoshikuzu Telepath",
     link: "https://twitter.com/vlusky_husky/status/1659586589297897473"
