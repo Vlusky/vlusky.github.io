@@ -15,6 +15,16 @@ interface youtube {
 //  [info] discords default thumbnail size has height of 413
 export const illust: image[] = [
   {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1118187056166867016/mira.png?width=734&height=413",
+    alt: "Mira Konohata with very shiny eyes",
+    link: "https://twitter.com/vlusky_husky/status/1668621894239809546"
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1118187056850534440/sasaki_rev.png?width=292&height=413",
+    alt: "Sasaki Tsuguko from Bocchi the Rock!",
+    link: "https://twitter.com/vlusky_husky/status/1668263106936545285"
+  },
+  {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1113474519554854912/photon_umbrella.png?width=734&height=413",
     alt: "Photon Maiden doing the pose from the Lost Umbrella album art",
     link: "https://twitter.com/vlusky_husky/status/1663892238525685761"
