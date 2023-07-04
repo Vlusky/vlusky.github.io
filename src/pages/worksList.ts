@@ -175,6 +175,7 @@ export const motion: youtube[] = [
 
 // https://www.youtube.com/watch?v=Z1UXpUNsf08&t=1604s
 export const video: youtube[] = [
+  {id:"9tvETGLM6Os",title:"OSHI NO KO's Peculiar Origins"},
   {id:"Z1UXpUNsf08",title:"CG Anime Battle Royale"},
   {id:"kOr9n-Y-WW0",title:"Bocchi vs Her Contemporaries"},
   {id:"UQXPOKUt7zQ",title:"Digging the Dig Delight Direct Drive"},
