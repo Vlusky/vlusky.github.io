@@ -15,9 +15,19 @@ interface youtube {
 //  [info] discords default thumbnail size has height of 413
 export const illust: image[] = [
   {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1125780849732886608/F0DEoHQakAESgJQ.png?width=413&height=413",
+    alt: "Ako Udagawa birthday art",
+    link: "https://twitter.com/vlusky_husky/status/1675555278081884160"
+  },
+  {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1118187056166867016/mira.png?width=734&height=413",
     alt: "Mira Konohata with very shiny eyes",
     link: "https://twitter.com/vlusky_husky/status/1668621894239809546"
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1125780959686557726/Fxxqcn2agAIep8o.png?width=594&height=413",
+    alt: "Aoba and Midori playtesting their game",
+    link: "https://twitter.com/vlusky_husky/status/1665324045783498753"
   },
   {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1118187056850534440/sasaki_rev.png?width=292&height=413",
