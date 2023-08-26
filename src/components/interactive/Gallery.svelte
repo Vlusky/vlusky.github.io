@@ -172,6 +172,10 @@
       overflow: visible;
     }
 
+    .img-title {
+      display: none;
+    }
+
     main > a > img {
       max-width: calc(100% - 0.5rem);
       max-height: 100vh;

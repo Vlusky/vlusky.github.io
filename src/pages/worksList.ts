@@ -206,6 +206,7 @@ export const design: image[] = [
 // https://www.youtube.com/watch?v=_#######
 // maybe setup an api to grab the title? ... nah probably not.
 export const motion: youtube[] = [
+  {id:"0ZVfpLwgPGA",title:"Inabakumori - SAKASAMA SHOUJOKAN short animation"},
   {id:"2-SAIdE9mvM",title:"Inabakumori - Lost Umbrella (yugiot remix)"},
   {id:"_llL0D8Jbr4",title:"Lyrical Lily - Maihime but Bocchi the Rock!"},
   {id:"kmiwqzMF6F8",title:"Roselia - Sanctuary"},
@@ -220,6 +221,7 @@ export const motion: youtube[] = [
 
 // https://www.youtube.com/watch?v=Z1UXpUNsf08&t=1604s
 export const video: youtube[] = [
+  {id:"JnhJbK2Ximg",title:"The Girl I Like Forgot Her Glasses: A Technical Analysis"},
   {id:"9tvETGLM6Os",title:"OSHI NO KO's Peculiar Origins"},
   {id:"Z1UXpUNsf08",title:"CG Anime Battle Royale"},
   {id:"kOr9n-Y-WW0",title:"Bocchi vs Her Contemporaries"},
