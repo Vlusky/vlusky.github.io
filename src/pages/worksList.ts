@@ -15,6 +15,51 @@ interface youtube {
 //  [info] discords default thumbnail size has height of 413
 export const illust: image[] = [
   {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981661172387860/rana_haneoka.png?width=298&height=430",
+    alt: "Raana Kaname from MyGO!!!!!",
+    link: "https://twitter.com/vlusky_husky/status/1695081974875213992"
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981660903944312/only_a_spoonful_3.png?width=677&height=430",
+    alt: "Only a spoonful with Nijika and Ryo",
+    link: "https://twitter.com/vlusky_husky/status/1692575226616570212"
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981660509675613/cat.png?width=430&height=430",
+    alt: "Raana Kaname",
+    link: "https://twitter.com/vlusky_husky/status/1687793264190164992"
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981794010189926/Shiho_Pkey_full_AA_waifu2x.png?width=261&height=430",
+    alt: "Shiho Honami from Project Sekai",
+    link: "https://twitter.com/vlusky_husky/status/1686405570843250688",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981661457588365/saki_tenma_white.png?width=304&height=430",
+    alt: "Gabriel Tenma White as Saki Tenma",
+    link: "https://twitter.com/vlusky_husky/status/1684972953300328448",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981968900071554/anon_chihaya.png?width=637&height=430",
+    alt: "Anon Chihaya from MyGO!!!!!",
+    link: "https://twitter.com/vlusky_husky/status/1683881740241346561",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981925845536888/tokyo_bug_night_no_watermark.png?width=764&height=430",
+    alt: "Shian Inubousaki from Denonbu short animation",
+    link: "https://twitter.com/vlusky_husky/status/1682415703981432833",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981969365643284/rana_2x.png?width=552&height=430",
+    alt: "Raana Kaname rough sketch",
+    link: "https://twitter.com/vlusky_husky/status/1682055786439245824",
+  },
+  {
+    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981684232667267/kyu_kitarin_design.png?width=764&height=430",
+    alt: "Kyu Kurarin Kita Ikuyo Parody",
+    link: "https://twitter.com/vlusky_husky/status/1681697871027118080",
+  },
+  {
     src: "https://media.discordapp.net/attachments/1027882514548789279/1125780849732886608/F0DEoHQakAESgJQ.png?width=413&height=413",
     alt: "Ako Udagawa birthday art",
     link: "https://twitter.com/vlusky_husky/status/1675555278081884160"

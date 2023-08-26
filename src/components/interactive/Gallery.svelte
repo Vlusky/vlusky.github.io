@@ -1,7 +1,8 @@
 
 <script lang="ts">
   import { slide, fade } from "svelte/transition"
-  import Youtube from "./Youtube.svelte";
+  import { createEventDispatcher } from 'svelte'
+  import Youtube from "./Youtube.svelte"
 
   type Kind = "image" | "youtube" | "soundcloud"
 
@@ -30,7 +31,8 @@
           class="shadow"
           src="{element.src}"
           alt="{element.alt}"
-        >
+        />
+        <span class="img-title text-shadow">{element.alt}</span>
       </a>
       {:else if kind === "youtube"}
       <!-- ! iframes suck, make your own thumbnail component -->
@@ -112,6 +114,24 @@
     transform: scale(1.02);
     cursor: pointer;
     filter: blur(0);
+  }
+
+  a:hover > .img-title {
+    opacity: 1;
+  }
+
+  .img-title {
+    position: absolute;
+    left: 0.25rem;
+    bottom: 0.5rem;
+    color: white;
+    font-weight:600;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.2s;
+    background: #00000066;
+    padding: 0.25rem;
+    pointer-events: none;
   }
 
   main > iframe {
