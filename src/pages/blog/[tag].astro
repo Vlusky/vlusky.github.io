@@ -4,7 +4,7 @@ import BlogThumbnail from '../../components/BlogThumbnail.astro'
 import BackButton from '../../components/BackButton.astro'
 
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob('../posts/*.md')
+  const allPosts = await Astro.glob('../posts/*.{md,mdx}')
   
   const uniqueTags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())]
 
@@ -21,15 +21,17 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 <BaseLayout pageTitle={"blog"} display="block" backgroundStyle="linear-gradient(156deg, rgba(36,0,0,1) 0%, rgba(121,9,58,1) 100%)">
-  <h2>Posts tagged with <div class="tag">{tag}</div></h2>
-
-  <div>
-    {posts.map((post: { frontmatter: { title: any; description: any; thumbnail: any; }; url: any; }) => <BlogThumbnail 
-        title={post.frontmatter.title}
-        description={post.frontmatter.description}
-        url={post.url}
-        thumbnail={post.frontmatter.thumbnail}
-    ></BlogThumbnail>)}
+  <div class="content">
+    <h2>Posts tagged with <div class="tag">{tag}</div></h2>
+  
+    <div>
+      {posts.map((post: { frontmatter: { title: any; description: any; thumbnail: any; }; url: any; }) => <BlogThumbnail 
+          title={post.frontmatter.title}
+          description={post.frontmatter.description}
+          url={post.url}
+          thumbnail={post.frontmatter.thumbnail}
+      ></BlogThumbnail>)}
+    </div>
   </div>
 
   <BackButton link="/blog" />
@@ -46,5 +48,9 @@ const { posts } = Astro.props;
     background-color: rgba(93, 93, 94, 0.699);
   }
 
-
+  .content {
+    max-width: 80ch;
+    margin: auto;
+    margin-top: 0;
+  }
 </style>
