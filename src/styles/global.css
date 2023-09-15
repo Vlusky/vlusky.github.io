@@ -84,15 +84,11 @@ ul, ol {
   padding: 0;
 } */
 
-blockquote {
-  background-color: #000000a1;
-  margin: 1rem;
-}
-
 a {
   color: rgb(177, 191, 235);
   text-decoration: none;
 }
+
 
 /* wannabe tailwind css utility class */
 .shadow {
