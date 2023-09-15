@@ -133,6 +133,12 @@
     padding: 0.25rem;
     pointer-events: none;
   }
+  /* it can't be "last child" because of the "hide" button */
+  main > a:nth-last-child(2) > .img-title,
+  main > a:nth-last-child(3) > .img-title {
+    right: 0.25rem;
+    left: auto;
+  }
 
   main > iframe {
     height: 20rem;

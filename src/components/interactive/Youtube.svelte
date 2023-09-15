@@ -1,6 +1,7 @@
 <script lang="ts">
   export let id: string
   export let title: string = "Title"
+  export let className: string = ""
   let isPlayed = false
 
   const play = () => {isPlayed = true}
@@ -15,6 +16,7 @@
   style="background-image:url({thumbnailLink})"
   on:click="{play}"
   on:keydown="{play}"
+  class={className}
 >
   {#if !isPlayed}  
   <span id="title" class="text-shadow">
