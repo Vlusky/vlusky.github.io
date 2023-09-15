@@ -1,11 +1,14 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: 'CG Anime Battle Royale, Notes and References.'
+title: CG Anime Battle Royale, Notes and References.
 pubDate: 2023-04-01
 thumbnail: url('https://cdn.discordapp.com/attachments/970738774071967757/1091035781268766811/image.png')
-description: 'Behind the scenes notes for the video'
-author: 'Vlusky'
-tags: ["video", "anime", "notes and references"]
+description: Behind the scenes notes for the video
+author: Vlusky
+tags:
+  - video
+  - anime
+  - notes
 ---
 
 ## Background
