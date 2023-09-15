@@ -95,6 +95,7 @@ const bg = frontmatter.thumbnail
   .yt {
     margin: 1.5rem;
     margin-top: 0rem;
+    display:none;
   }
 
   table {
@@ -116,7 +117,17 @@ const bg = frontmatter.thumbnail
     margin-top: 0;
   }
 
+  @media only screen and (max-width: 480px) {
+    /* hacky compact table layout because MOBILE SUCKS */
 
+    table {
+      font-size: 0.8rem;
+    }
+
+    td, th {
+      padding: 0.25rem;
+    }
+  }
 
 </style>
 
