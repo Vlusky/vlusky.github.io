@@ -13,6 +13,41 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/ZJEZy.md.png",
+    alt: "Kazusa Kyouyama loose lineless artstyle",
+    link: "https://twitter.com/vlusky_husky/status/1713774321116848607"
+  },
+  {
+    src: "https://s6.imgcdn.dev/ZJLSL.md.png",
+    alt: "Nadeshiko with a jacket and shirt uniform",
+    link: "https://twitter.com/vlusky_husky/status/1710309600249966760"
+  },
+  {
+    src: "https://s6.imgcdn.dev/ZJ3iu.md.png",
+    alt: "Rin Shima with a blazer and shirt uniform",
+    link: "https://twitter.com/vlusky_husky/status/1710309522873483424"
+  },
+  {
+    src: "https://s6.imgcdn.dev/ZJbma.md.png",
+    alt: "Rin Shima and Aoi Yukimura sitting beside a campfire",
+    link: "https://twitter.com/vlusky_husky/status/1708508240970133752"
+  },
+  {
+    src: "https://s6.imgcdn.dev/ZJmuw.md.png",
+    alt: "Hifumi Takimoto wearing a uniform from Asteroid in Love",
+    link: "https://twitter.com/vlusky_husky/status/1706332401667117350"
+  },
+  {
+    src: "https://s6.imgcdn.dev/ZJqat.md.png",
+    alt: "Honoka Kurosawa from Yama no Susume",
+    link: "https://twitter.com/vlusky_husky/status/1701979899337343121"
+  },
+  {
+    src: "https://s6.imgcdn.dev/ZJgK9.md.png",
+    alt: "Bocchi in a more Rock and Roll kind outfit",
+    link: "https://twitter.com/vlusky_husky/status/1696910929001337180"
+  },
+  {
     src: "https://s6.imgcdn.dev/ZJTGH.md.png",
     alt: "Raana Kaname from MyGO!!!!! as a student of Haneoka",
     link: "https://twitter.com/vlusky_husky/status/1695081974875213992"
@@ -161,6 +196,16 @@ export const illust: image[] = [
 
 export const design: image[] = [
   {
+    src: "https://s6.imgcdn.dev/ZJFWT.md.png",
+    alt: "Humble motivational poster",
+    link: "https://twitter.com/vlusky_husky/status/1700835788165128252"
+  },
+  {
+    src: "https://s6.imgcdn.dev/ZJXhD.md.png",
+    alt: "Somewhat brutalist design test",
+    link: "https://twitter.com/vlusky_husky/status/1700835788165128252"
+  },
+  {
     src: "https://s6.imgcdn.dev/ZJSEh.md.png",
     alt: "Infographic about Iyashikei with Rin Shima",
     link: "https://twitter.com/vlusky_husky/status/1398990650368880646"
@@ -204,6 +249,7 @@ export const design: image[] = [
 // https://www.youtube.com/watch?v=_#######
 // maybe setup an api to grab the title? ... nah probably not.
 export const motion: youtube[] = [
+  {id:"Po9oDclaPPg",title:"MyGO!!!!! - Utakotoba"},
   {id:"0ZVfpLwgPGA",title:"Inabakumori - SAKASAMA SHOUJOKAN short animation"},
   {id:"2-SAIdE9mvM",title:"Inabakumori - Lost Umbrella (yugiot remix)"},
   {id:"_llL0D8Jbr4",title:"Lyrical Lily - Maihime but Bocchi the Rock!"},
