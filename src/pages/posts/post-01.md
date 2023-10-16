@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: CG Anime Battle Royale, Notes and References.
 pubDate: 2023-04-01
-thumbnail: url('https://cdn.discordapp.com/attachments/970738774071967757/1091035781268766811/image.png')
+thumbnail: url('https://s6.imgcdn.dev/ZJ2eo.png')
 description: Behind the scenes notes for the video
 author: Vlusky
 tags:
@@ -52,10 +52,10 @@ I uploaded a clip of [MASKING from RAISE A SULIEN's Drum Solo](https://www.youtu
 And what I found was the less of an "Anime Fan" you are, the more you can _actually enjoy things for what they are_.
 Crazy shit I know.
 
-![lovely comment](https://media.discordapp.net/attachments/699790035704217643/1091549861918277632/image.png)
+![lovely comment](https://s6.imgcdn.dev/ZJOcO.png)
 I mean look at this guy enjoying the show.
 
-![mom against cg phobia](https://media.discordapp.net/attachments/699790035704217643/1067097735418871808/image.png?width=729&height=413)
+![mom against cg phobia](https://s6.imgcdn.dev/ZJZan.png)
 We need to rise up against cg-phobia. For the greater good.
 
 > ### I wasn't able to cover _The Story_ in the video so here are some notes i have about it:

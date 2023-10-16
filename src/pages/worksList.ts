@@ -11,151 +11,149 @@ interface youtube {
   title: string;
 }
 
-// ![todo) change the src to the scaled down discord version
-//  [info] discords default thumbnail size has height of 413
 export const illust: image[] = [
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981661172387860/rana_haneoka.png?width=298&height=430",
-    alt: "Raana Kaname from MyGO!!!!!",
+    src: "https://s6.imgcdn.dev/ZJTGH.md.png",
+    alt: "Raana Kaname from MyGO!!!!! as a student of Haneoka",
     link: "https://twitter.com/vlusky_husky/status/1695081974875213992"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981660903944312/only_a_spoonful_3.png?width=677&height=430",
+    src: "https://s6.imgcdn.dev/ZJPQi.md.png",
     alt: "Only a spoonful with Nijika and Ryo",
     link: "https://twitter.com/vlusky_husky/status/1692575226616570212"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981660509675613/cat.png?width=430&height=430",
-    alt: "Raana Kaname",
+    src: "https://s6.imgcdn.dev/ZJ5g2.md.png",
+    alt: "Raana Kaname lineless test",
     link: "https://twitter.com/vlusky_husky/status/1687793264190164992"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981794010189926/Shiho_Pkey_full_AA_waifu2x.png?width=261&height=430",
+    src: "https://s6.imgcdn.dev/ZJyA8.md.png",
     alt: "Shiho Honami from Project Sekai",
     link: "https://twitter.com/vlusky_husky/status/1686405570843250688",
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981661457588365/saki_tenma_white.png?width=304&height=430",
+    src: "https://s6.imgcdn.dev/ZJs5y.md.png",
     alt: "Gabriel Tenma White as Saki Tenma",
     link: "https://twitter.com/vlusky_husky/status/1684972953300328448",
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981968900071554/anon_chihaya.png?width=637&height=430",
+    src: "https://s6.imgcdn.dev/ZJnD9.md.png",
     alt: "Anon Chihaya from MyGO!!!!!",
     link: "https://twitter.com/vlusky_husky/status/1683881740241346561",
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981925845536888/tokyo_bug_night_no_watermark.png?width=764&height=430",
+    src: "https://s6.imgcdn.dev/ZJQzT.md.png",
     alt: "Shian Inubousaki from Denonbu short animation",
     link: "https://twitter.com/vlusky_husky/status/1682415703981432833",
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981969365643284/rana_2x.png?width=552&height=430",
+    src: "https://s6.imgcdn.dev/ZJNMt.md.png",
     alt: "Raana Kaname rough sketch",
     link: "https://twitter.com/vlusky_husky/status/1682055786439245824",
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1144981684232667267/kyu_kitarin_design.png?width=764&height=430",
+    src: "https://s6.imgcdn.dev/ZJCew.md.png",
     alt: "Kyu Kurarin Kita Ikuyo Parody",
     link: "https://twitter.com/vlusky_husky/status/1681697871027118080",
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1125780849732886608/F0DEoHQakAESgJQ.png?width=413&height=413",
+    src: "https://s6.imgcdn.dev/ZJ4Ga.md.png",
     alt: "Ako Udagawa birthday art",
     link: "https://twitter.com/vlusky_husky/status/1675555278081884160"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1118187056166867016/mira.png?width=734&height=413",
+    src: "https://s6.imgcdn.dev/ZJuNL.md.png",
     alt: "Mira Konohata with very shiny eyes",
     link: "https://twitter.com/vlusky_husky/status/1668621894239809546"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1125780959686557726/Fxxqcn2agAIep8o.png?width=594&height=413",
+    src: "https://s6.imgcdn.dev/ZJMgu.md.png",
     alt: "Aoba and Midori playtesting their game",
     link: "https://twitter.com/vlusky_husky/status/1665324045783498753"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1118187056850534440/sasaki_rev.png?width=292&height=413",
+    src: "https://s6.imgcdn.dev/ZJ6AB.md.png",
     alt: "Sasaki Tsuguko from Bocchi the Rock!",
     link: "https://twitter.com/vlusky_husky/status/1668263106936545285"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1113474519554854912/photon_umbrella.png?width=734&height=413",
+    src: "https://s6.imgcdn.dev/Z8WBS.md.png",
     alt: "Photon Maiden doing the pose from the Lost Umbrella album art",
     link: "https://twitter.com/vlusky_husky/status/1663892238525685761"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1109355966463488100/hoshikuzu_the_rock.png?width=292&height=413",
+    src: "https://s6.imgcdn.dev/Z8dbC.md.png",
     alt: "Bocchi and Kita in the style of the key visual for Hoshikuzu Telepath",
     link: "https://twitter.com/vlusky_husky/status/1659586589297897473"
   },  
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1107221763831631902/akeuchi_alien_alien.png?width=734&height=413",
+    src: "https://s6.imgcdn.dev/Z8L6e.md.png",
     alt: "Yuu Akeuchi from Hoshikuzu Telepath doing the pose from Alien Alien",
     link: "https://twitter.com/vlusky_husky/status/1657420559117062144"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1101515699505082459/hifumi_hifumi_takimoto_half.png?width=292&height=413",
+    src: "https://s6.imgcdn.dev/Z8efM.md.png",
     alt: "Hifumi Takimoto from NEW GAME! wearing the costume of Hifumi Ajitani from Blue Archive",
     link: "https://twitter.com/vlusky_husky/status/1651593598553694208"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1101515699190501406/hifumi_hifumi_ajitani_rev_half.png?width=292&height=413",
+    src: "https://s6.imgcdn.dev/Z8mpd.md.png",
     alt: "Hifumi Ajitani from Blue Archive wearing the costume of Hifumi Takimoto from NEW GAME!",
     link: "https://twitter.com/vlusky_husky/status/1651593598553694208"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1098135874107097118/manga_time_kirara_shy_space_girls.png?width=734&height=413",
+    src: "https://s6.imgcdn.dev/Z8HAh.md.png",
     alt: "Ao Manaka and Umika Konohoshi as the Shy Space Girls of Manga Time Kirara",
     link: "https://twitter.com/vlusky_husky/status/1648502445851701248"
   },
   {
-    src:"https://media.discordapp.net/attachments/1027882514548789279/1081772078400815174/Fpk87u0aYAAZbmX.png?width=377&height=413",
-    alt:"Miku (Purin) Suride wearing a uniform from Blue Archive",
+    src: "https://s6.imgcdn.dev/Z8XXV.md.png",
+    alt: "Miku (Purin) Suride wearing a uniform from Blue Archive",
     link:"https://twitter.com/vlusky_husky/status/1628400101331972098"
   },
   {
-    src:"https://media.discordapp.net/attachments/1027882514548789279/1078613629143879711/FpQ0x4baEAI_Xrt.png?width=231&height=412",
+    src:"https://s6.imgcdn.dev/Z8ENK.md.png",
     alt:"Raimon Matataki from Hoshikuzu Telepath",
     link:"https://twitter.com/vlusky_husky/status/1626983719235092481"
   },
   {
-    src:"https://media.discordapp.net/attachments/1027882514548789279/1081772357875671151/FoNtDhsaMAAtHOB.png?width=275&height=413",
+    src:"https://s6.imgcdn.dev/Z88Bo.md.png",
     alt:"Lisa Imai wearing a Hanasakigawa sailor uniform",
     link:"https://twitter.com/vlusky_husky/status/1622260425864933377"
   },
   {
-    src:"https://media.discordapp.net/attachments/1027882514548789279/1081772733110702311/FnpmR7vaYAAbKt4.png?width=734&height=413",
+    src:"https://s6.imgcdn.dev/Z8JbO.md.png",
     alt:"Diamond from Houseki no Kuni in low poly style",
     link:"https://twitter.com/vlusky_husky/status/1619719736727830528"
   },
   {
-    src:"https://media.discordapp.net/attachments/1027882514548789279/1081772980020977726/FmwyCuEaMAQ8_Go.png?width=734&height=413",
+    src:"https://s6.imgcdn.dev/Z8pMn.md.png",
     alt:"Nijika Ichiji doing the pose from Zettai Sengen",
     link:"https://twitter.com/vlusky_husky/status/1615721737198669824"
   },
   {
-    src:"https://media.discordapp.net/attachments/1027882514548789279/1078613899521310760/FlzUZgnaAAE8g0o.png?width=252&height=412",
+    src:"https://s6.imgcdn.dev/Z8bl0.md.png",
     alt:"Kita Ikuyo X Kasumi Toyama",
     link:"https://twitter.com/vlusky_husky/status/1611396327187054594"
   },
   {
-    src:"https://media.discordapp.net/attachments/1027882514548789279/1081773239291887717/FhdZsUPaMAAhEy2.png?width=413&height=413",
+    src:"https://s6.imgcdn.dev/ZJDlg.md.png",
     alt:"#BTRBandParody with Bocchi as Neil from the Lemon Demon - Spirit Phone album cover",
     link:"https://twitter.com/vlusky_husky/status/1591839994683195395"
   },
   {
-    src:"https://media.discordapp.net/attachments/1027882514548789279/1081817551702605925/FiVh8hMakAYWaDz.png?width=734&height=413",
+    src:"https://s6.imgcdn.dev/ZJYfv.md.png",
     alt:"Ryo Yamada and Rin Shima",
     link:"https://twitter.com/vlusky_husky/status/1595789393721462788"
   },
   {
-    src:"https://media.discordapp.net/attachments/1027882514548789279/1078614467249713232/Fi42aQ_aYAAGq9Z.png?width=413&height=413",
+    src:"https://s6.imgcdn.dev/ZJjDN.md.png",
     alt:"Rei and Yua from the DIY Anime wearing the costumes of Ran and Moca from Bandori",
     link:"https://twitter.com/vlusky_husky/status/1598274944651390976"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882866434134066/with-oasis.png?width=310&height=413",
+    src: "https://s6.imgcdn.dev/ZJwyq.md.png",
     alt: "Cover art for CrunchyBagels's novel With Oasis",
     link: "https://www.honeyfeed.fm/novels/8699"
   },
@@ -163,40 +161,40 @@ export const illust: image[] = [
 
 export const design: image[] = [
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882862738944061/iyashikei.png?width=734&height=413",
+    src: "https://s6.imgcdn.dev/ZJSEh.md.png",
     alt: "Infographic about Iyashikei with Rin Shima",
     link: "https://twitter.com/vlusky_husky/status/1398990650368880646"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863208706059/lock-banner.png?width=734&height=413",
+    src: "https://s6.imgcdn.dev/ZJGOl.md.png",
     alt: "Banner design with LOCK or Rokka Asahi",
     link: "https://twitter.com/vlusky_husky/status/1423091377139720196"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865846915102/tomoe-poly.png?width=734&height=413",
+    src: "https://s6.imgcdn.dev/ZJB5d.md.png",
     alt: "Banner design with Tomoe Udagawa",
     link: "https://twitter.com/vlusky_husky/status/1571109157482434563"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863561035806/mindspace.png?width=413&height=413",
+    src: "https://s6.imgcdn.dev/ZJ7YM.md.png",
     alt: "Mindspace album art",
     link: "https://twitter.com/vlusky_husky/status/1488532010247520257"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882863984652289/pastel-dark.png?width=853&height=480",
+    src: "https://s6.imgcdn.dev/ZJ1t0.md.png",
     alt: "Pastel dark",
     link: "https://twitter.com/vlusky_husky/status/1488532010247520257"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882862218858526/crystals.png?width=734&height=413",
+    src: "https://s6.imgcdn.dev/ZJaze.md.png",
     alt: "Crystals",
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1027882865020645396/ruins.png?width=853&height=480",
+    src: "https://s6.imgcdn.dev/ZJzcC.md.png",
     alt: "Ruins"
   },
   {
-    src: "https://media.discordapp.net/attachments/1027882514548789279/1098136956682108968/EwIQdzxVcAIIvDX.png?width=413&height=413",
+    src: "https://s6.imgcdn.dev/ZJUeS.md.png",
     alt: "A grid of cubes that looks like a futuristic end crystal",
     link: "https://twitter.com/vlusky_husky/status/1369675439875125254"
   }

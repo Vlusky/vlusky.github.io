@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: 'New site!'
 pubDate: 2023-04-01
-thumbnail: url('https://cdn.discordapp.com/attachments/1027882514548789279/1091565946319151134/image.png')
+thumbnail: url('https://s6.imgcdn.dev/ZJxSK.png')
 description: 'This is the first post of my new Astro blog.'
 author: 'Vlusky'
 tags:
@@ -28,6 +28,10 @@ We'll see once this site is actually deployed.
 
 Also yes I used Discord to host my images. God knows if it will collapse any time soon,
 but for now it's the most convenient way for me to just put up an image here.
+
+> ## Update as of 16th of October 2023
+> Discord had changed how their CDN links works so I have no choice but to migrate.
+> My images are now hosted on [imgcdn.dev](https://imgcdn.dev/)
 
 One final obligatory disclaimer, this site is written by me, an idiot.
 Please excuse the bugs.
