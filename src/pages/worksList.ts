@@ -13,6 +13,26 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/Rowht.md.png",
+    alt: "PA-san from Bocchi the Rock in leather jackets",
+    link: "https://twitter.com/vlusky_husky/status/1728092756743188990"
+  },
+  {
+    src: "https://s6.imgcdn.dev/Ro6PT.md.png",
+    alt: "Umika Lagtrain",
+    link: "https://twitter.com/vlusky_husky/status/1727504361377644666"
+  },
+  {
+    src: "https://s6.imgcdn.dev/Rohdw.md.png",
+    alt: "Umika and Ao switched uniforms",
+    link: "https://twitter.com/vlusky_husky/status/1726259593075122463"
+  },
+  {
+    src: "https://s6.imgcdn.dev/RoDuL.md.png",
+    alt: "Umika plush",
+    link: "https://twitter.com/umika_daily/status/1724420159316574409"
+  },
+  {
     src: "https://s6.imgcdn.dev/ZJEZy.md.png",
     alt: "Kazusa Kyouyama loose lineless artstyle",
     link: "https://twitter.com/vlusky_husky/status/1713774321116848607"
