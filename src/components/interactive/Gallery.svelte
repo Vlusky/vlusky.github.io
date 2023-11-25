@@ -104,16 +104,20 @@
     margin-left: 0.25rem;
   }
 
+  /*
   main:has(a:hover) img {
     opacity: 0.5;
-    filter: blur(5px);
   }
 
   main:has(a:hover) img:hover {
     opacity: 1;
-    transform: scale(1.02);
     cursor: pointer;
     filter: blur(0);
+  }
+  */
+
+  main:hover > a:not(:hover) >img {
+    opacity:0.5;
   }
 
   a:hover > .img-title {
@@ -126,7 +130,7 @@
     bottom: 0.5rem;
     color: white;
     font-weight:600;
-    z-index: 2;
+    z-index: 100;
     opacity: 0;
     transition: opacity 0.2s;
     background: #00000066;
