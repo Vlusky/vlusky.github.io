@@ -13,6 +13,21 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/VxtqL.md.png",
+    alt: "Konoha Akisato in 16 bit Amiga style",
+    link "https://twitter.com/vlusky_husky/status/1733117472218493422"
+  },
+  {
+    src: "https://s6.imgcdn.dev/VxVkB.md.png",
+    alt: "Mikan Hinatsuki from Machikado Mazoku",
+    link: "https://twitter.com/vlusky_husky/status/1732419241490739494"
+  },
+  {
+    src: "https://s6.imgcdn.dev/Vx98q.md.png",
+    alt: "Sasaki Tsuguko in anime style",
+    link: "https://twitter.com/vlusky_husky/status/1728452226904113297"
+  },
+  {
     src: "https://s6.imgcdn.dev/Rowht.md.png",
     alt: "PA-san from Bocchi the Rock in leather jackets",
     link: "https://twitter.com/vlusky_husky/status/1728092756743188990"
