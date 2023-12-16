@@ -13,6 +13,11 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/VXSWe.md.png",
+    alt: "Karin Natsuki the SynthV/CeVIO voice",
+    link: "",
+  },
+  {
     src: "https://s6.imgcdn.dev/VxtqL.md.png",
     alt: "Konoha Akisato in 16 bit Amiga style",
     link: "https://twitter.com/vlusky_husky/status/1733117472218493422"
