@@ -15,7 +15,7 @@ export const illust: image[] = [
   {
     src: "https://s6.imgcdn.dev/VXSWe.md.png",
     alt: "Karin Natsuki the SynthV/CeVIO voice",
-    link: "",
+    link: "https://twitter.com/vlusky_husky/status/1736064640042586233",
   },
   {
     src: "https://s6.imgcdn.dev/VxtqL.md.png",
