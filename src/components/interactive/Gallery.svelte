@@ -116,7 +116,7 @@
   }
   */
 
-  main:hover > a:not(:hover) >img {
+  main:hover > a:not(:hover) > img {
     opacity:0.5;
   }
 
@@ -211,6 +211,7 @@
     }
 
     /* disable the epic gamer hover effect when on mobile */
+    /*
     main:has(a:hover) img {
       opacity: 1;
       filter: blur(0);
@@ -221,6 +222,10 @@
       transform: scale(1.02);
       cursor: pointer;
       filter: blur(0);
+    }
+    */
+    main:hover > a:not(:hover) > img {
+      opacity: 1;
     }
 
     main .hide {
