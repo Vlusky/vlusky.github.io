@@ -1,8 +1,8 @@
-
 <script lang="ts">
   import { slide, fade } from "svelte/transition"
-  import { createEventDispatcher } from 'svelte'
+  // import { createEventDispatcher } from "svelte"
   import Youtube from "./Youtube.svelte"
+  import viewport from "./useViewportAction"
 
   type Kind = "image" | "youtube" | "soundcloud"
 
@@ -11,32 +11,69 @@
   export let elements: any
   export let kind: Kind
 
-  let isOpen = false 
-  const toggle = () => {isOpen = !isOpen}
+  let loadedCount = 6
+  let loadedCurrent = 0
+
+  // to hell with the iframes, they have a set width so no need to wait for them to load
+  if (kind !== "image") {
+    loadedCurrent = elements.length
+  }
+
+  const loadMore = () => {
+    console.log("definitely loading")
+
+    if (loadedCurrent < loadedCount) {
+      return
+    }
+
+    const check = setInterval(() => {
+      console.log("checking")
+
+      if (loadedCount < elements.length && loadedCurrent === loadedCount) {
+        loadedCount += 6
+        clearInterval(check)
+      }
+    }, 1000)
+  }
+
+  let isOpen = false
+  const toggle = () => {
+    isOpen = !isOpen
+  }
 </script>
 
 <h1 class="text-shadow">
   {title}
+  {loadedCurrent}
+  {loadedCount}
   <button class="material-symbols-rounded" on:click={toggle}>
     {isOpen ? "expand_more" : "chevron_right"}
-  </button> 
+  </button>
 </h1>
 {#if isOpen}
   <main transition:slide style="background:{bg}">
-    {#each elements as element}
-      {#if kind === "image"}
-      <a target="_blank" rel="noreferrer" href="{element.link || element.src}">
-        <img
-          transition:fade
-          class="shadow"
-          src="{element.src}"
-          alt="{element.alt}"
-        />
-        <span class="img-title text-shadow">{element.alt}</span>
-      </a>
-      {:else if kind === "youtube"}
-      <!-- ! iframes suck, make your own thumbnail component -->
-      <!-- <iframe
+    {#each elements as element, index}
+      {#if index < loadedCount}
+        {#if kind === "image"}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={element.link || element.src}
+          >
+            <img
+              transition:fade
+              class="shadow"
+              src={element.src}
+              alt={element.alt}
+              on:load={() => {
+                loadedCurrent += 1
+              }}
+            />
+            <span class="img-title text-shadow">{element.alt} {index}</span>
+          </a>
+        {:else if kind === "youtube"}
+          <!-- ! iframes suck, make your own thumbnail component -->
+          <!-- <iframe
       transition:fade
         class="youtube shadow"
         src="https://www.youtube.com/embed/{element}?controls=0"
@@ -44,48 +81,83 @@
         allowfullscreen
       ></iframe> -->
 
-      <div class="youtube shadow">
-        <Youtube id="{element.id}" title="{element.title}"/>
-      </div>
-
-      {:else if kind === "soundcloud"}
-      <iframe
-        transition:fade
-        title="Soundcloud player"
-        class="soundcloud shadow"
-        scrolling="no"
-        frameborder="no"
-        allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{element}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          <div class="youtube shadow">
+            <Youtube id={element.id} title={element.title} />
+          </div>
+        {:else if kind === "soundcloud"}
+          <iframe
+            transition:fade
+            title="Soundcloud player"
+            class="soundcloud shadow"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{element}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          ></iframe>
+        {/if}
       {/if}
     {/each}
-    <button on:click={toggle} class="hide">hide<span class="material-symbols-rounded">expand_less</span></button>
+    <!-- typescript has no fucking idea that the other file dispatched a new event -->
+    <div
+      use:viewport
+      on:enterViewport={loadMore}
+      class="loader"
+      style="display:{loadedCurrent === elements.length ? 'none' : 'inline'}"
+    >
+      <span class="material-symbols-rounded">progress_activity</span>
+    </div>
+    <button on:click={toggle} class="hide"
+      >hide<span class="material-symbols-rounded">expand_less</span>
+    </button>
   </main>
 {/if}
 
 <style>
-  h1 {
-    padding: 1rem
+  @keyframes spin {
+    from {
+      rotate: 0deg;
+    }
+    to {
+      rotate: 360deg;
+    }
   }
-  
+
+  h1 {
+    padding: 1rem;
+  }
+
   button {
     background: none;
     border: none;
-    color:white;
-    cursor: pointer
+    color: white;
+    cursor: pointer;
   }
-  
+
   main {
     overflow-x: auto;
-    overflow-y:hidden;
+    overflow-y: hidden;
     white-space: nowrap;
     padding-bottom: 0px;
   }
 
   main > a {
     position: relative;
-    height: 10px;
+    height: 20rem;
     margin: 0px;
+  }
+
+  main > .loader {
+    display: inline;
+    position: relative;
+    margin-right: 0.5rem;
+    bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .loader > span {
+    rotate: 20deg;
+    font-size: 3rem;
+    animation: spin 2s linear 0s infinite;
   }
 
   main > a:first-child > img {
@@ -117,7 +189,7 @@
   */
 
   main:hover > a:not(:hover) > img {
-    opacity:0.5;
+    opacity: 0.5;
   }
 
   a:hover > .img-title {
@@ -129,7 +201,7 @@
     left: 0.25rem;
     bottom: 0.5rem;
     color: white;
-    font-weight:600;
+    font-weight: 600;
     z-index: 100;
     opacity: 0;
     transition: opacity 0.2s;
@@ -138,8 +210,8 @@
     pointer-events: none;
   }
   /* it can't be "last child" because of the "hide" button */
-  main > a:nth-last-child(2) > .img-title,
-  main > a:nth-last-child(3) > .img-title {
+  main > a:nth-last-child(3) > .img-title,
+  main > a:nth-last-child(4) > .img-title {
     right: 0.25rem;
     left: auto;
   }
@@ -155,7 +227,7 @@
   .youtube {
     height: 20rem;
     aspect-ratio: 16/9;
-    display:inline-block;
+    display: inline-block;
     margin: 0.25rem;
     margin-bottom: 0;
   }
@@ -163,9 +235,9 @@
   .youtube:not(:first-child) {
     margin-left: 0;
   }
-  
+
   .soundcloud {
-    aspect-ratio: 1
+    aspect-ratio: 1;
   }
 
   main .hide {
@@ -177,7 +249,7 @@
   @media only screen and (max-width: 620px) {
     main {
       white-space: normal;
-      text-align:center;
+      text-align: center;
       height: 100%;
       overflow: visible;
     }
@@ -197,7 +269,7 @@
       height: auto;
       width: calc(100% - 0.5rem);
       margin: 0 !important;
-      padding:0 ;
+      padding: 0;
     }
 
     .youtube {
@@ -234,7 +306,7 @@
       justify-content: center;
       position: sticky;
       z-index: 1;
-      width:100%;
+      width: 100%;
       bottom: 0;
       background-color: rgba(0, 0, 0, 0.479);
       height: 3rem;
