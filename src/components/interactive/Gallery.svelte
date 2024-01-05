@@ -153,6 +153,7 @@
   }
 
   .loader > span {
+    margin: 1rem;
     rotate: 20deg;
     font-size: 3rem;
     animation: spin 2s linear 0s infinite;
