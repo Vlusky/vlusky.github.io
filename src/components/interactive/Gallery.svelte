@@ -184,11 +184,11 @@
     cursor: pointer;
     filter: blur(0);
   }
-  */
 
   main:hover > a:not(:hover) > img {
     opacity: 0.5;
   }
+  */
 
   a:hover > .img-title {
     opacity: 1;
