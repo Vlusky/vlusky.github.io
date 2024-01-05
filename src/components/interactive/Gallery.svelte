@@ -67,7 +67,7 @@
                 loadedCurrent += 1
               }}
             />
-            <span class="img-title text-shadow">{element.alt} {index}</span>
+            <span class="img-title text-shadow">{element.alt}</span>
           </a>
         {:else if kind === "youtube"}
           <!-- ! iframes suck, make your own thumbnail component -->
