@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: Terms of Use
-pubDate: 2023-04-01
+pubDate: 2024-01-06
 thumbnail: url('https://s6.imgcdn.dev/fQ2i2.png')
 description: How YOU can use my art
 author: Vlusky
