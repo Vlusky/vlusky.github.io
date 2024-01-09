@@ -13,6 +13,11 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/fyyXd.md.png",
+    alt: "Shimeji and Majime in the Weather Station album art",
+    link: "https://twitter.com/vlusky_husky/status/1743963244304490503"
+  },
+  {
     src: "https://s6.imgcdn.dev/VXSWe.md.png",
     alt: "Karin Natsuki the SynthV/CeVIO voice",
     link: "https://twitter.com/vlusky_husky/status/1736064640042586233",
@@ -161,7 +166,7 @@ export const illust: image[] = [
     src: "https://s6.imgcdn.dev/Z8dbC.md.png",
     alt: "Bocchi and Kita in the style of the key visual for Hoshikuzu Telepath",
     link: "https://twitter.com/vlusky_husky/status/1659586589297897473"
-  },  
+  },
   {
     src: "https://s6.imgcdn.dev/Z8L6e.md.png",
     alt: "Yuu Akeuchi from Hoshikuzu Telepath doing the pose from Alien Alien",
@@ -185,47 +190,47 @@ export const illust: image[] = [
   {
     src: "https://s6.imgcdn.dev/Z8XXV.md.png",
     alt: "Miku (Purin) Suride wearing a uniform from Blue Archive",
-    link:"https://twitter.com/vlusky_husky/status/1628400101331972098"
+    link: "https://twitter.com/vlusky_husky/status/1628400101331972098"
   },
   {
-    src:"https://s6.imgcdn.dev/Z8ENK.md.png",
-    alt:"Raimon Matataki from Hoshikuzu Telepath",
-    link:"https://twitter.com/vlusky_husky/status/1626983719235092481"
+    src: "https://s6.imgcdn.dev/Z8ENK.md.png",
+    alt: "Raimon Matataki from Hoshikuzu Telepath",
+    link: "https://twitter.com/vlusky_husky/status/1626983719235092481"
   },
   {
-    src:"https://s6.imgcdn.dev/Z88Bo.md.png",
-    alt:"Lisa Imai wearing a Hanasakigawa sailor uniform",
-    link:"https://twitter.com/vlusky_husky/status/1622260425864933377"
+    src: "https://s6.imgcdn.dev/Z88Bo.md.png",
+    alt: "Lisa Imai wearing a Hanasakigawa sailor uniform",
+    link: "https://twitter.com/vlusky_husky/status/1622260425864933377"
   },
   {
-    src:"https://s6.imgcdn.dev/Z8JbO.md.png",
-    alt:"Diamond from Houseki no Kuni in low poly style",
-    link:"https://twitter.com/vlusky_husky/status/1619719736727830528"
+    src: "https://s6.imgcdn.dev/Z8JbO.md.png",
+    alt: "Diamond from Houseki no Kuni in low poly style",
+    link: "https://twitter.com/vlusky_husky/status/1619719736727830528"
   },
   {
-    src:"https://s6.imgcdn.dev/Z8pMn.md.png",
-    alt:"Nijika Ichiji doing the pose from Zettai Sengen",
-    link:"https://twitter.com/vlusky_husky/status/1615721737198669824"
+    src: "https://s6.imgcdn.dev/Z8pMn.md.png",
+    alt: "Nijika Ichiji doing the pose from Zettai Sengen",
+    link: "https://twitter.com/vlusky_husky/status/1615721737198669824"
   },
   {
-    src:"https://s6.imgcdn.dev/Z8bl0.md.png",
-    alt:"Kita Ikuyo X Kasumi Toyama",
-    link:"https://twitter.com/vlusky_husky/status/1611396327187054594"
+    src: "https://s6.imgcdn.dev/Z8bl0.md.png",
+    alt: "Kita Ikuyo X Kasumi Toyama",
+    link: "https://twitter.com/vlusky_husky/status/1611396327187054594"
   },
   {
-    src:"https://s6.imgcdn.dev/ZJDlg.md.png",
-    alt:"#BTRBandParody with Bocchi as Neil from the Lemon Demon - Spirit Phone album cover",
-    link:"https://twitter.com/vlusky_husky/status/1591839994683195395"
+    src: "https://s6.imgcdn.dev/ZJDlg.md.png",
+    alt: "#BTRBandParody with Bocchi as Neil from the Lemon Demon - Spirit Phone album cover",
+    link: "https://twitter.com/vlusky_husky/status/1591839994683195395"
   },
   {
-    src:"https://s6.imgcdn.dev/ZJYfv.md.png",
-    alt:"Ryo Yamada and Rin Shima",
-    link:"https://twitter.com/vlusky_husky/status/1595789393721462788"
+    src: "https://s6.imgcdn.dev/ZJYfv.md.png",
+    alt: "Ryo Yamada and Rin Shima",
+    link: "https://twitter.com/vlusky_husky/status/1595789393721462788"
   },
   {
-    src:"https://s6.imgcdn.dev/ZJjDN.md.png",
-    alt:"Rei and Yua from the DIY Anime wearing the costumes of Ran and Moca from Bandori",
-    link:"https://twitter.com/vlusky_husky/status/1598274944651390976"
+    src: "https://s6.imgcdn.dev/ZJjDN.md.png",
+    alt: "Rei and Yua from the DIY Anime wearing the costumes of Ran and Moca from Bandori",
+    link: "https://twitter.com/vlusky_husky/status/1598274944651390976"
   },
   {
     src: "https://s6.imgcdn.dev/ZJwyq.md.png",
@@ -289,33 +294,33 @@ export const design: image[] = [
 // https://www.youtube.com/watch?v=_#######
 // maybe setup an api to grab the title? ... nah probably not.
 export const motion: youtube[] = [
-  {id:"Po9oDclaPPg",title:"MyGO!!!!! - Utakotoba"},
-  {id:"0ZVfpLwgPGA",title:"Inabakumori - SAKASAMA SHOUJOKAN short animation"},
-  {id:"2-SAIdE9mvM",title:"Inabakumori - Lost Umbrella (yugiot remix)"},
-  {id:"_llL0D8Jbr4",title:"Lyrical Lily - Maihime but Bocchi the Rock!"},
-  {id:"kmiwqzMF6F8",title:"Roselia - Sanctuary"},
-  {id:"XUYi3lpncOg",title:"Happy Around! - GURU GURU DJ TURN!!"},
-  {id:"L_iHuC7Wvo8",title:"Photon Maiden - 4 Challenges"},
-  {id:"HXeW1cCc_mE",title:"Afterglow - SENSENFUKOKU"},
-  {id:"v5QcY46pDkU",title:"False Noise - Collapse Theme"}, // False Noise - Collapse Theme Motion Graphics test
-  {id:"Lfl2LHf-4Jw",title:"Aoba, Kou - Sayonara Hikoukigumo"},
-  {id:"iEPy-1KcIZo",title:"Gawr Gura - Reflect"}
+  { id: "Po9oDclaPPg", title: "MyGO!!!!! - Utakotoba" },
+  { id: "0ZVfpLwgPGA", title: "Inabakumori - SAKASAMA SHOUJOKAN short animation" },
+  { id: "2-SAIdE9mvM", title: "Inabakumori - Lost Umbrella (yugiot remix)" },
+  { id: "_llL0D8Jbr4", title: "Lyrical Lily - Maihime but Bocchi the Rock!" },
+  { id: "kmiwqzMF6F8", title: "Roselia - Sanctuary" },
+  { id: "XUYi3lpncOg", title: "Happy Around! - GURU GURU DJ TURN!!" },
+  { id: "L_iHuC7Wvo8", title: "Photon Maiden - 4 Challenges" },
+  { id: "HXeW1cCc_mE", title: "Afterglow - SENSENFUKOKU" },
+  { id: "v5QcY46pDkU", title: "False Noise - Collapse Theme" }, // False Noise - Collapse Theme Motion Graphics test
+  { id: "Lfl2LHf-4Jw", title: "Aoba, Kou - Sayonara Hikoukigumo" },
+  { id: "iEPy-1KcIZo", title: "Gawr Gura - Reflect" }
 ]
 
 
 // https://www.youtube.com/watch?v=Z1UXpUNsf08&t=1604s
 export const video: youtube[] = [
-  {id:"QkIsD8EAcS0",title:"The Cursed Episodes of Roselia"},
-  {id:"JnhJbK2Ximg",title:"The Girl I Like Forgot Her Glasses: A Technical Analysis"},
-  {id:"9tvETGLM6Os",title:"OSHI NO KO's Peculiar Origins"},
-  {id:"Z1UXpUNsf08",title:"CG Anime Battle Royale"},
-  {id:"kOr9n-Y-WW0",title:"Bocchi vs Her Contemporaries"},
-  {id:"UQXPOKUt7zQ",title:"Digging the Dig Delight Direct Drive"},
-  {id:"F2pAsfzGbk8",title:"Establish Life, Establish Dominance"},
-  {id:"e73JIsjQffI",title:"I did not care for K-ON"},
-  {id:"TADtZYJVc4k",title:"BanG Dream! and the Bangers it had within"},
-  {id:"wqoURmKBVMI",title:"Hands down, the best CGDCT in town"},
-  {id:"C6KhZTJDZcM",title:"Netflix Furry Starter Pack"},
+  { id: "QkIsD8EAcS0", title: "The Cursed Episodes of Roselia" },
+  { id: "JnhJbK2Ximg", title: "The Girl I Like Forgot Her Glasses: A Technical Analysis" },
+  { id: "9tvETGLM6Os", title: "OSHI NO KO's Peculiar Origins" },
+  { id: "Z1UXpUNsf08", title: "CG Anime Battle Royale" },
+  { id: "kOr9n-Y-WW0", title: "Bocchi vs Her Contemporaries" },
+  { id: "UQXPOKUt7zQ", title: "Digging the Dig Delight Direct Drive" },
+  { id: "F2pAsfzGbk8", title: "Establish Life, Establish Dominance" },
+  { id: "e73JIsjQffI", title: "I did not care for K-ON" },
+  { id: "TADtZYJVc4k", title: "BanG Dream! and the Bangers it had within" },
+  { id: "wqoURmKBVMI", title: "Hands down, the best CGDCT in town" },
+  { id: "C6KhZTJDZcM", title: "Netflix Furry Starter Pack" },
 ]
 
 // soundcloud API song/playlist ID
