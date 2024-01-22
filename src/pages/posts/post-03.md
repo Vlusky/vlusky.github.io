@@ -35,9 +35,8 @@ Also yes this does mean you can use my art for reference and even trace them. Ju
 >
 > My YouTube videos are slightly more complicated as the rights I do have are kinda fuzzy
 > (Fair Use is NOT concrete and I do not have explicit permissions to use the clips).
-> But in general, if it's an aspect of the video I _did_ make myself, they're CC3.
->
-> i.e. = script, narration audio, custom visuals
+> 
+> "True" creative commons is actually rather strict with what material I can use so these are licensed with the usual "Standard Youtube License"
 
 
 # FAQ
