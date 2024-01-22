@@ -309,7 +309,9 @@ export const motion: youtube[] = [
 
 
 // https://www.youtube.com/watch?v=Z1UXpUNsf08&t=1604s
+// at some point i wish to implement an API for these so I don't have to get the titles manually but This Will Do
 export const video: youtube[] = [
+  { id: "uQdF0BrZV6A", title: "How Stardust Telepath Portrays Anxiety" },
   { id: "QkIsD8EAcS0", title: "The Cursed Episodes of Roselia" },
   { id: "JnhJbK2Ximg", title: "The Girl I Like Forgot Her Glasses: A Technical Analysis" },
   { id: "9tvETGLM6Os", title: "OSHI NO KO's Peculiar Origins" },
