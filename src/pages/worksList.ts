@@ -13,6 +13,11 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/teW7O.md.png",
+    alt: "Ryo Yamada wearing the Haneoka uniform",
+    link: "https://twitter.com/vlusky_husky/status/1761267140940964090"
+  },
+  {
     src: "https://s6.imgcdn.dev/fyyXd.md.png",
     alt: "Shimeji and Majime in the Weather Station album art",
     link: "https://twitter.com/vlusky_husky/status/1743963244304490503"

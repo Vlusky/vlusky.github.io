@@ -16,7 +16,9 @@
 
   // to hell with the iframes, they have a set width so no need to wait for them to load
   if (kind !== "image") {
-    loadedCurrent = elements.length
+    // what
+    loadedCount = elements.length
+    loadedCurrent = loadedCount
   }
 
   const loadMore = () => {
@@ -44,6 +46,7 @@
 
 <h1 class="text-shadow">
   {title}
+  {loadedCount}
   <button class="material-symbols-rounded" on:click={toggle}>
     {isOpen ? "expand_more" : "chevron_right"}
   </button>
