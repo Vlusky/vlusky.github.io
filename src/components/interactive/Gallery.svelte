@@ -46,7 +46,7 @@
 
 <h1 class="text-shadow">
   {title}
-  {loadedCount}
+  <!-- {loadedCount} -->
   <button class="material-symbols-rounded" on:click={toggle}>
     {isOpen ? "expand_more" : "chevron_right"}
   </button>
