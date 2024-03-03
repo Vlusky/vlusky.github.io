@@ -13,6 +13,11 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/tEB5T.md.png",
+    alt: "Kayo Fujikawa playing with the Arturia Polybrute analog synth",
+    link: "https://twitter.com/vlusky_husky/status/1763953314407039321"
+  },
+  {
     src: "https://s6.imgcdn.dev/teW7O.md.png",
     alt: "Ryo Yamada wearing the Haneoka uniform",
     link: "https://twitter.com/vlusky_husky/status/1761267140940964090"
