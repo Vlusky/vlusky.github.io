@@ -13,6 +13,11 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/WTgT2.md.png",
+    alt: "Inabakumori's Osage-chan in moody lighting",
+    link: "https://twitter.com/vlusky_husky/status/1774251347547947432"
+  },
+  {
     src: "https://s6.imgcdn.dev/tEB5T.md.png",
     alt: "Kayo Fujikawa playing with the Arturia Polybrute analog synth",
     link: "https://twitter.com/vlusky_husky/status/1763953314407039321"
