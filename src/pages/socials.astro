@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
+import BaseLayout from "../layouts/BaseLayout.astro"
 
 interface LinkButton {
   label: string
@@ -10,100 +10,120 @@ interface LinkButton {
 
 const socials: LinkButton[] = [
   {
-    label: 'Youtube',
-    url: 'https://www.youtube.com/channel/UCqmTTMCwW-N-v32DY-g2Glw',
-    color: 'linear-gradient(21deg, rgba(251,0,165,1) 0%, rgba(219,0,0,1) 100%);',
-    tooltip: 'My long-form reviews + more'
-  },{
-    label: 'Twitter',
-    url: 'https://twitter.com/vlusky_husky',
-    color: 'linear-gradient(21deg, rgba(0,123,251,1) 0%, rgba(0,170,219,1) 100%);',
-    tooltip: 'Short/WIP contents + more (DM\'s are open)'
-  },{
+    label: "Youtube",
+    url: "https://www.youtube.com/channel/UCqmTTMCwW-N-v32DY-g2Glw",
+    color:
+      "linear-gradient(21deg, rgba(251,0,165,1) 0%, rgba(219,0,0,1) 100%);",
+    tooltip: "My long-form reviews + more",
+  },
+  {
+    label: "Twitter",
+    url: "https://twitter.com/vlusky_husky",
+    color:
+      "linear-gradient(21deg, rgba(0,123,251,1) 0%, rgba(0,170,219,1) 100%);",
+    tooltip: "Short/WIP contents + more (DM's are open)",
+  },
+  /* fuck mastodon {
     label: 'Mastodon',
     url: 'https://mastodon.social/@vlusky_husky',
     color: 'linear-gradient(50deg, rgba(146,78,198,1) 0%, rgba(15,232,245,1) 100%)',
     tooltip: 'Separate Twitter Art Archive'
-  },{
-    label: 'Bandcamp',
-    url: 'https://vlusky.bandcamp.com/',
-    color: 'linear-gradient(21deg, rgba(79,0,251,1) 0%, rgba(219,0,218,1) 100%);',
-    tooltip: 'Download/Buy my music'
-  },{
-    label: 'Soundcloud',
-    url: 'https://soundcloud.com/vlusky-husky',
-    color: 'linear-gradient(21deg, rgba(251,160,0,1) 0%, rgba(219,55,0,1) 100%);',
-    tooltip: 'Stream my music'
-  },{
-    label: 'Newgrounds',
-    url: 'https://vluskyonly.newgrounds.com/audio',
-    color: 'linear-gradient(21deg, rgba(251,160,0,1) 0%, rgba(219,213,0,1) 100%)',
-    tooltip: 'Songs available for use in Geometry Dash'
+  },*/ {
+    label: "Bandcamp",
+    url: "https://vlusky.bandcamp.com/",
+    color:
+      "linear-gradient(21deg, rgba(79,0,251,1) 0%, rgba(219,0,218,1) 100%);",
+    tooltip: "Download/Buy my music",
+  },
+  {
+    label: "Soundcloud",
+    url: "https://soundcloud.com/vlusky-husky",
+    color:
+      "linear-gradient(21deg, rgba(251,160,0,1) 0%, rgba(219,55,0,1) 100%);",
+    tooltip: "Stream my music",
+  },
+  {
+    label: "Newgrounds",
+    url: "https://vluskyonly.newgrounds.com/audio",
+    color:
+      "linear-gradient(21deg, rgba(251,160,0,1) 0%, rgba(219,213,0,1) 100%)",
+    tooltip: "Songs available for use in Geometry Dash",
   },
 ]
 ---
-<BaseLayout pageTitle="socials" display="full-screen flex" backgroundStyle="linear-gradient(135deg,rgba(0,0,0,1) 0%,rgba(4,2,113,1) 100%)">
+
+<BaseLayout
+  pageTitle="socials"
+  display="full-screen flex"
+  backgroundStyle="linear-gradient(135deg,rgba(0,0,0,1) 0%,rgba(4,2,113,1) 100%)"
+>
   <div id="button-container">
-    {socials.map((button) =>
-      <a target="_blank" href={button.url || 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'}>
-          <button style={{background: button.color}}>
+    {
+      socials.map((button) => (
+        <a
+          target="_blank"
+          href={button.url || "https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
+        >
+          <button style={{ background: button.color }}>
             <span>{button.label}</span>
           </button>
           <span class="desc">{button.tooltip}</span>
-          <br/>
-      </a>)
+          <br />
+        </a>
+      ))
     }
   </div>
 </BaseLayout>
 
 <style>
-#button-container {
-  text-align:center;
-  width: 100%;
-}
-
-.desc {
-  position: absolute;
-  z-index: 1;
-  text-align: left;
-  opacity: 0;
-  width: 35ch;
-  transition: opacity 0.2s ease-out, margin-left 0.2s ease-out, visibility 0.2s ease-out
-}
-
-#button-container > a:hover > .desc {
-  opacity: 1;
-  margin-left: 0.2rem;
-}
-
-#button-container > a:hover > button {
-  filter: brightness(150%)
-}
-
-#button-container button {
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-size: 1.2rem;
-  height: 4rem;
-  width: 100%;
-  max-width: 20rem;
-  border: none;
-  box-shadow: 2px 2px 4px black;
-  color: white;
-  
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616);
-  
-  padding: 0.5rem;
-  margin: 0.25rem;
-
-  cursor: pointer;
-
-  transition: filter 0.2s
-}
-
-@media only screen and (max-width: 1070px) {
-  .desc {
-    display: none
+  #button-container {
+    text-align: center;
+    width: 100%;
   }
-}
+
+  .desc {
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+    opacity: 0;
+    width: 35ch;
+    transition: opacity 0.2s ease-out, margin-left 0.2s ease-out,
+      visibility 0.2s ease-out;
+  }
+
+  #button-container > a:hover > .desc {
+    opacity: 1;
+    margin-left: 0.2rem;
+  }
+
+  #button-container > a:hover > button {
+    filter: brightness(150%);
+  }
+
+  #button-container button {
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    height: 4rem;
+    width: 100%;
+    max-width: 20rem;
+    border: none;
+    box-shadow: 2px 2px 4px black;
+    color: white;
+
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616);
+
+    padding: 0.5rem;
+    margin: 0.25rem;
+
+    cursor: pointer;
+
+    transition: filter 0.2s;
+  }
+
+  @media only screen and (max-width: 1070px) {
+    .desc {
+      display: none;
+    }
+  }
 </style>
