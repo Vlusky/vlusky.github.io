@@ -13,6 +13,11 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/WAN48.md.png",
+    alt: "Shizuru and Shimeji crossover",
+    link: "https://twitter.com/vlusky_husky/status/1780264145545511287"
+  },
+  {
     src: "https://s6.imgcdn.dev/WTgT2.md.png",
     alt: "Inabakumori's Osage-chan in moody lighting",
     link: "https://twitter.com/vlusky_husky/status/1774251347547947432"
