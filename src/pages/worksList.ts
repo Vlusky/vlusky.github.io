@@ -314,9 +314,10 @@ export const design: image[] = [
 // https://www.youtube.com/watch?v=_#######
 // maybe setup an api to grab the title? ... nah probably not.
 export const motion: youtube[] = [
+  { id: "R04cm3knpD8", title: "inabakumori - Secret Elementary School Student" },
   { id: "Po9oDclaPPg", title: "MyGO!!!!! - Utakotoba" },
-  { id: "0ZVfpLwgPGA", title: "Inabakumori - SAKASAMA SHOUJOKAN short animation" },
-  { id: "2-SAIdE9mvM", title: "Inabakumori - Lost Umbrella (yugiot remix)" },
+  { id: "0ZVfpLwgPGA", title: "inabakumori - SAKASAMA SHOUJOKAN short animation" },
+  { id: "2-SAIdE9mvM", title: "inabakumori - Lost Umbrella (yugiot remix)" },
   { id: "_llL0D8Jbr4", title: "Lyrical Lily - Maihime but Bocchi the Rock!" },
   { id: "kmiwqzMF6F8", title: "Roselia - Sanctuary" },
   { id: "XUYi3lpncOg", title: "Happy Around! - GURU GURU DJ TURN!!" },
