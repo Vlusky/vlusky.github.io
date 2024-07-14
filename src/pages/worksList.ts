@@ -20,6 +20,11 @@ export const illust: image[] = [
     link: "https://x.com/vlusky_husky/status/1812150296724091172",
   },
   {
+    src: "https://s6.imgcdn.dev/dg7Iy.md.png",
+    alt: "Kano Yamanouchi in the Oshi no Ko opening",
+    link: "https://x.com/vlusky_husky/status/1790697674897018985"
+  },
+  {
     src: "https://s6.imgcdn.dev/WAN48.md.png",
     alt: "Shizuru and Shimeji crossover",
     link: "https://twitter.com/vlusky_husky/status/1780264145545511287"
