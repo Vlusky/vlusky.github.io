@@ -1,4 +1,6 @@
-import { remToPixels } from "../scripts/unitConvertions";
+// this was supposed to be for the discord images thing where you can put the
+// resolution in the link... yea that's not gonna be helpful now.
+// import { remToPixels } from "../scripts/unitConvertions";
 
 interface image {
   src: string;
@@ -12,6 +14,11 @@ interface youtube {
 }
 
 export const illust: image[] = [
+  {
+    src: "https://s6.imgcdn.dev/LCYo0.md.png",
+    alt: "Mira shows Tomori their rock collection",
+    link: "https://x.com/vlusky_husky/status/1812150296724091172",
+  },
   {
     src: "https://s6.imgcdn.dev/WAN48.md.png",
     alt: "Shizuru and Shimeji crossover",
