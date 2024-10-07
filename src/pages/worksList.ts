@@ -15,6 +15,11 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/Fneol.md.png",
+    alt: "Miyamai Moca laying on a bed",
+    link: "https://x.com/vlusky_husky/status/1842963625335791894"
+  },
+  {
     src: "https://s6.imgcdn.dev/LCYo0.md.png",
     alt: "Mira shows Tomori their rock collection",
     link: "https://x.com/vlusky_husky/status/1812150296724091172",
