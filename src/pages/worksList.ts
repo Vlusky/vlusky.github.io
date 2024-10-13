@@ -15,6 +15,11 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/HMs9o.md.png",
+    alt: "Ryo Yamada with the Make Noise Shared System synthesizer.",
+    link: "https://x.com/vlusky_husky/status/1845126516897955949"
+  },
+  {
     src: "https://s6.imgcdn.dev/Fneol.md.png",
     alt: "Miyamai Moca laying on a bed",
     link: "https://x.com/vlusky_husky/status/1842963625335791894"
