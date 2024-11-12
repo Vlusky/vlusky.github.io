@@ -53,6 +53,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   padding: 1.5rem;
 }
 
+p {
+  text-align: justify;
+}
+
 /* prevent the weird double padding... i should probably start learning SASS... */
 /* doing this the other way would also involve this kinda bullshit */
 p:not(:first-child),
