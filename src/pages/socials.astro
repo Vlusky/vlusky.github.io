@@ -83,7 +83,7 @@ const socials: LinkButton[] = [
             <!--
             <object class={"button-icon " + button.label.toLowerCase()} type="image/svg+xml" data={button.icon || "circle.svg"}></object>
             -->
-            <img class={"button-icon " + button.label.toLowerCase()} src={button.icon || "circle.svg"} />
+            <img class={"button-icon " + button.label.toLowerCase()} src={"/" + button.icon || "circle.svg"} />
           </button>
           <!--
           <span class="desc">{button.tooltip}</span>
