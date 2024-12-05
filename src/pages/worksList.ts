@@ -15,6 +15,11 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/8hvh2.md.png",
+    alt: "High schooler Kaai Yuki lending her hand.",
+    link: "https://x.com/vlusky_husky/status/1864342601815753027"
+  },
+  {
     src: "https://s6.imgcdn.dev/HMs9o.md.png",
     alt: "Ryo Yamada with the Make Noise Shared System synthesizer.",
     link: "https://x.com/vlusky_husky/status/1845126516897955949"
