@@ -15,6 +15,11 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/JDbWB.md.png",
+    alt: "Maho Akashi with the Moog Matriarch",
+    link: "https://x.com/vlusky_husky/status/1868330981125726641"
+  },
+  {
     src: "https://s6.imgcdn.dev/8hvh2.md.png",
     alt: "High schooler Kaai Yuki lending her hand.",
     link: "https://x.com/vlusky_husky/status/1864342601815753027"
