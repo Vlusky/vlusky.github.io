@@ -111,8 +111,9 @@ const socials: LinkButton[] = [
   #button-container button {
     font-family: "Poppins", Helvetica, Arial, sans-serif;
     font-size: 1.2rem;
-    height: 12rem;
     width: 12rem;
+    max-width: 43vw;
+    aspect-ratio: 1;
     border: none;
     box-shadow: 2px 2px 4px black;
     color: white;
@@ -146,9 +147,10 @@ const socials: LinkButton[] = [
     height: 4rem !important;
   }
 
-  @media only screen and (max-width: 1070px) {
-    .desc {
-      display: none;
+  @media only screen and (max-width: 700px) {
+    #button-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
     }
   }
 </style>
