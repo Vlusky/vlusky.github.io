@@ -15,6 +15,11 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/Yho1n2.md.png",
+    alt: "Mafuyu Asahina with the Prophet 5",
+    link: "https://x.com/vlusky_husky/status/1879401603494760874"
+  },
+  {
     src: "https://s6.imgcdn.dev/JDbWB.md.png",
     alt: "Maho Akashi with the Moog Matriarch",
     link: "https://x.com/vlusky_husky/status/1868330981125726641"
@@ -364,6 +369,7 @@ export const motion: youtube[] = [
 // https://www.youtube.com/watch?v=Z1UXpUNsf08&t=1604s
 // at some point i wish to implement an API for these so I don't have to get the titles manually but This Will Do
 export const video: youtube[] = [
+  { id: "Xx2Pu09VnWA", title: "100 designs in 100 minutes (in blender)" },
   { id: "6OqkvUwYMjI", title: "Angsty Girl Bands Bonanza" },
   { id: "uQdF0BrZV6A", title: "How Stardust Telepath Portrays Anxiety" },
   { id: "QkIsD8EAcS0", title: "The Cursed Episodes of Roselia" },
@@ -391,3 +397,10 @@ export const songs = [
   "1167044617", // lonely night
   "972780034",  // in and out of stasis
 ];
+
+export const songsNew: youtube[] = [
+  { id: "VcEIG6lQiiI", title: "[original] LOOP BREAK ft. Kasane Teto" },
+  { id: "VQneQ6bg1LY", title: "[original] adrift ft. Kasukabe Tsumugi" },
+  { id: "dBu-etCZTbg", title: "[cover] inabakumori - Radar ft. Adachi Rei" },
+  { id: "uj3-3M0unEc", title: "[cover] inabakumori - Sen'i Hito-kukaku ft. Kasane Teto" }
+]
