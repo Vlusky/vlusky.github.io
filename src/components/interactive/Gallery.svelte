@@ -1,56 +1,56 @@
 <script lang="ts">
-  import { slide, fade } from "svelte/transition"
+  import { slide, fade } from "svelte/transition";
   // import { createEventDispatcher } from "svelte"
-  import Youtube from "./Youtube.svelte"
-  import viewport from "./useViewportAction"
+  import Youtube from "./Youtube.svelte";
+  import viewport from "./useViewportAction";
 
-  type Kind = "image" | "youtube" | "soundcloud"
+  type Kind = "image" | "youtube" | "soundcloud";
 
-  export let title = "title"
-  export let bg = "rgb(202, 5, 104)"
-  export let elements: any
-  export let kind: Kind
+  export let title = "title";
+  export let bg = "rgb(202, 5, 104)";
+  export let elements: any;
+  export let kind: Kind;
 
-  let loadedCount = 6
-  let loadedCurrent = 0
+  let loadedCount = 6;
+  let loadedCurrent = 0;
 
   // to hell with the iframes, they have a set width so no need to wait for them to load
   if (kind !== "image") {
     // what
-    loadedCount = elements.length
-    loadedCurrent = loadedCount
+    loadedCount = elements.length;
+    loadedCurrent = loadedCount;
   }
 
   const loadMore = () => {
-    console.log("definitely loading")
+    console.log("definitely loading");
 
     if (loadedCurrent < loadedCount) {
-      return
+      return;
     }
 
     const check = setInterval(() => {
-      console.log("checking")
+      console.log("checking, " + loadedCurrent + " images are loaded");
 
       if (loadedCount < elements.length && loadedCurrent === loadedCount) {
-        loadedCount += 6
-        clearInterval(check)
+        loadedCount += 6;
+        clearInterval(check);
       }
-    }, 1000)
-  }
+    }, 1000);
+  };
 
-  let isOpen = false
+  let isOpen = false;
   const toggle = () => {
-    isOpen = !isOpen
-  }
+    isOpen = !isOpen;
+  };
 </script>
 
-<h1 class="text-shadow">
-  {title}
+<button class="title-button" on:click={toggle}>
+  <h1>{title}</h1>
   <!-- {loadedCount} -->
-  <button class="material-symbols-rounded" on:click={toggle}>
+  <span class="material-symbols-rounded">
     {isOpen ? "expand_more" : "chevron_right"}
-  </button>
-</h1>
+  </span>
+</button>
 {#if isOpen}
   <main transition:slide style="background:{bg}">
     {#each elements as element, index}
@@ -67,7 +67,7 @@
               src={element.src}
               alt={element.alt}
               on:load={() => {
-                loadedCurrent += 1
+                loadedCurrent += 1;
               }}
             />
             <span class="img-title text-shadow">{element.alt}</span>
@@ -123,15 +123,22 @@
     }
   }
 
-  h1 {
-    padding: 1rem;
-  }
-
-  button {
+  .title-button {
     background: none;
     border: none;
     color: white;
     cursor: pointer;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .title-button > h1 {
+    /* what */
+    padding: 0;
+    font-family: "Poppins", "Noto Sans JP", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
   }
 
   main {
@@ -147,7 +154,7 @@
     margin: 0px;
   }
 
-  main > .loader {
+  .loader {
     display: inline;
     position: relative;
     margin-right: 0.5rem;
@@ -157,9 +164,8 @@
 
   .loader > span {
     margin-top: 1rem;
-    rotate: 20deg;
     font-size: 3rem;
-    animation: spin 2s linear 0s infinite;
+    animation: spin 2s linear infinite;
   }
 
   main > a:first-child > img {
