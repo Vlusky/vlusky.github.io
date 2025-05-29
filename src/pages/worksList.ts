@@ -15,6 +15,22 @@ interface youtube {
 
 export const illust: image[] = [
   {
+    src: "https://s6.imgcdn.dev/YMwfuq.md.png",
+    alt: "Matataki Raimon birthday art",
+    link: "https://x.com/vlusky_husky/status/1909640775341949020"
+
+  },
+  {
+    src: "https://s6.imgcdn.dev/YMwRqN.png",
+    alt: "School outfit Kagamine Len",
+    link: "https://x.com/vlusky_husky/status/1906151587279749477",
+  },
+  {
+    src: "https://s6.imgcdn.dev/YMw9rv.md.png",
+    alt: "Koharu Rikka meets Hitori 'Bocchi' Gotoh",
+    link: "https://x.com/vlusky_husky/status/1888282938296717472"
+  },
+  {
     src: "https://s6.imgcdn.dev/Yho1n2.md.png",
     alt: "Mafuyu Asahina with the Prophet 5",
     link: "https://x.com/vlusky_husky/status/1879401603494760874"
