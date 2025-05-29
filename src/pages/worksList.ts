@@ -21,6 +21,11 @@ export const illust: image[] = [
 
   },
   {
+    src: "https://s6.imgcdn.dev/YMwLPa.md.png",
+    alt: "Enter the (Shimeji) Simulation",
+    link: "https://x.com/vlusky_husky/status/1906378113011040570"
+  },
+  {
     src: "https://s6.imgcdn.dev/YMwRqN.png",
     alt: "School outfit Kagamine Len",
     link: "https://x.com/vlusky_husky/status/1906151587279749477",
@@ -385,6 +390,7 @@ export const motion: youtube[] = [
 // https://www.youtube.com/watch?v=Z1UXpUNsf08&t=1604s
 // at some point i wish to implement an API for these so I don't have to get the titles manually but This Will Do
 export const video: youtube[] = [
+  { id: "dqJFYKUTeTc", title: "Trying  to (properly) use GIMP 3.0" },
   { id: "Xx2Pu09VnWA", title: "100 designs in 100 minutes (in blender)" },
   { id: "6OqkvUwYMjI", title: "Angsty Girl Bands Bonanza" },
   { id: "uQdF0BrZV6A", title: "How Stardust Telepath Portrays Anxiety" },
